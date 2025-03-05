@@ -1,6 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap");
+
 $font-primary: "DM Sans", sans-serif;
 $font-heading: "DM Serif Display", serif;
+
+$primary-color: #1b1642;
+$secondary-color: #f3f8ff;
+$text-color: #575a7b;
+$button-accent-color: #6658ea;
+$highlight-color: #ffc267;
+$white-color: #fff;
+
+$logo-size: 24px;
+
+$heading-large: 82px;
+$heading-medium: 64px;
+$heading-small: 48px;
+$sub-heading: 20px;
+
+$text-large: 20px;
+$text-medium: 18px;
+$text-regular: 16px;
+$text-small: 14px;
+
+@mixin wrapper {
+  max-width: 1920px;
+  width: 100%;
+  margin-inline: auto;
+}
+@mixin btn {
+  --bs-btn-color: #{$white-color};
+  --bs-btn-bg: #{$button-accent-color};
+  --bs-btn-border-color: #{$button-accent-color};
+  --bs-btn-hover-color: #{$white-color};
+  --bs-btn-hover-bg: #4632c1; // Set an explicit dark color
+  --bs-btn-hover-border-color: #3d2aaa;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #{$white-color};
+  --bs-btn-active-bg: #32208e; // Another explicit color for active state
+  --bs-btn-active-border-color: #2a1b7e;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #{$white-color};
+  --bs-btn-disabled-bg: #{$button-accent-color};
+  --bs-btn-disabled-border-color: #{$button-accent-color};
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 8px 0;
+  box-shadow: 0px 14px 24px 0px #1b16420f, 0px 0px 6px 0px #00000008;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,8 +57,6 @@ $font-heading: "DM Serif Display", serif;
 body {
   font-family: $font-primary;
 }
-
-// Use DM Serif Display for logo and headings
 .logo,
 h1,
 h2,
@@ -20,4 +65,244 @@ h4,
 h5,
 h6 {
   font-family: $font-heading;
+}
+.header {
+  background-color: $secondary-color;
+  .custom-border {
+    height: 5px;
+    background: linear-gradient(
+      to right,
+      $text-color 20%,
+      #f9655b 20% 40%,
+      $highlight-color 40% 60%,
+      $button-accent-color 60% 80%,
+      #ffcccc 80% 100%
+    );
+  }
+  nav {
+    padding-top: 32px !important;
+    .mobile-logo {
+      font-size: $logo-size;
+      cursor: pointer;
+      color: $primary-color;
+    }
+    .navbar-nav {
+      column-gap: 60px;
+      row-gap: 20px;
+      .nav-link {
+        font-size: $text-medium;
+        color: $primary-color;
+      }
+      .logo {
+        font-size: $logo-size;
+        cursor: pointer;
+        color: $primary-color;
+      }
+    }
+  }
+}
+.try-section {
+  @include wrapper();
+  .try-content {
+    padding: 216px 351px 272px 345px;
+    .sub-head {
+      font-size: $text-small;
+      letter-spacing: 2.52px;
+      color: $button-accent-color;
+      padding-bottom: 8px;
+    }
+    h2 {
+      font-size: $heading-large;
+      color: $primary-color;
+      padding-bottom: 14px;
+    }
+    .content {
+      font-size: $text-medium;
+      color: $primary-color;
+      max-width: 558px;
+      padding-bottom: 36px;
+    }
+    .btn-primary {
+      @include btn();
+      letter-spacing: -0.18px;
+      padding: 12.5px 28px;
+    }
+  }
+}
+.custom-border {
+  height: 5px;
+  background: linear-gradient(
+    to right,
+    $text-color 20%,
+    #f9655b 20% 40%,
+    $highlight-color 40% 60%,
+    $button-accent-color 60% 80%,
+    #ffcccc 80% 100%
+  );
+}
+footer {
+  .footer-bg-element {
+    top: -184px;
+    right: 0;
+  }
+  padding: 101px 208px 129px 166px;
+  background-color: $primary-color;
+  color: $white-color;
+  .company-details {
+    h2 {
+      font-size: $logo-size;
+    }
+    p {
+      font-size: $text-medium;
+      opacity: 0.6;
+    }
+  }
+  .foot-links {
+    .products {
+      padding-left: 84px;
+    }
+    .services-1 {
+      padding-left: 104px;
+    }
+    .connect {
+      padding-left: 84px;
+    }
+    ul {
+      list-style-type: none;
+      .head {
+        font-size: $text-small;
+        opacity: 1;
+        padding-bottom: 23px;
+      }
+      li {
+        font-size: $text-medium;
+        opacity: 0.6;
+        cursor: pointer;
+        padding-bottom: 16px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1400px) {
+  .try-section {
+    .try-content {
+      padding: 180px 290px 230px 290px;
+    }
+  }
+  footer {
+    padding: 80px 180px 110px 140px;
+    .foot-links {
+      .products {
+        padding-left: 70px;
+      }
+      .services-1 {
+        padding-left: 90px;
+      }
+      .connect {
+        padding-left: 70px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .try-section {
+    .try-content {
+      padding: 150px 234px 200px 234px;
+    }
+  }
+  footer {
+    padding: 70px 100px 100px 90px;
+    .foot-links {
+      .products {
+        padding-left: 60px;
+      }
+      .services-1 {
+        padding-left: 60px;
+      }
+      .connect {
+        padding-left: 60px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .try-section {
+    .try-content {
+      padding: 130px 200px 200px 190px;
+      h2 {
+        font-size: $heading-small;
+      }
+      .content {
+        max-width: 352px;
+        width: 100%;
+      }
+    }
+  }
+  .header {
+    nav {
+      padding-top: 15px !important;
+      .navbar-nav {
+        padding-block: 25px;
+      }
+    }
+  }
+  footer {
+    row-gap: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .try-section {
+    .try-content {
+      padding: 100px 105px 200px 105px;
+    }
+  }
+  footer {
+    padding: 70px 24px;
+    .foot-links {
+      ul {
+        li {
+          font-size: $text-regular;
+        }
+      }
+      .products,
+      .services-1,
+      .connect {
+        padding-left: 55px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 568px) {
+  .try-section {
+    .try-content {
+      padding: 100px 22px 322px 24px;
+    }
+  }
+  footer {
+    .footer-bg-element {
+      display: none !important;
+    }
+    .footer-mobile-bg-element {
+      display: block !important;
+      top: -161px;
+      right: 0;
+    }
+    .footer-mobile-pattern {
+      display: block !important;
+      top: -231px;
+      right: 49px;
+    }
+    width: 100%;
+    .foot-links {
+      justify-content: start;
+      flex-wrap: wrap;
+      column-gap: 25px;
+      row-gap: 10px;
+      .products,
+      .services-1,
+      .connect {
+        padding-left: 0;
+      }
+    }
+  }
 }
