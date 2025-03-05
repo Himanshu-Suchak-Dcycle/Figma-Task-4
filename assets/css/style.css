@@ -49,6 +49,90 @@ h6 {
   color: #1b1642;
 }
 
+.hero-section {
+  max-width: 1920px;
+  width: 100%;
+  margin-inline: auto;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 81.1%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 81.1%, 0% 100%);
+  background-color: #f3f8ff;
+  padding: 95px 0 330px 142px;
+}
+.hero-section .hero-content {
+  padding-top: 144px;
+  padding-bottom: 53px;
+}
+.hero-section .hero-content h1 {
+  max-width: 478px;
+  width: 100%;
+  font-size: 64px;
+  color: #1b1642;
+}
+.hero-section .hero-content h1 span {
+  color: #6658ea;
+}
+.hero-section .hero-content p {
+  max-width: 448px;
+  width: 100%;
+  font-size: 20px;
+  line-height: 32px;
+  margin-top: 18px;
+}
+.hero-section .hero-content .btn-container {
+  margin-top: 36px;
+  gap: 18px;
+}
+.hero-section .hero-content .btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #6658ea;
+  --bs-btn-border-color: #6658ea;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #4632c1;
+  --bs-btn-hover-border-color: #3d2aaa;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #32208e;
+  --bs-btn-active-border-color: #2a1b7e;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #6658ea;
+  --bs-btn-disabled-border-color: #6658ea;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 8px 0;
+  box-shadow: 0px 14px 24px 0px rgba(27, 22, 66, 0.0588235294), 0px 0px 6px 0px rgba(0, 0, 0, 0.031372549);
+  letter-spacing: -0.18px;
+  padding: 15.5px 28px;
+}
+.hero-section .hero-content .btn-outline-primary {
+  --bs-btn-color: #6658ea;
+  --bs-btn-border-color: #6658ea;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #6658ea;
+  --bs-btn-hover-border-color: #6658ea;
+  --bs-btn-focus-shadow-rgb: 102,
+    88, 234;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #6658ea;
+  --bs-btn-active-border-color: #6658ea;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #6658ea;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #6658ea;
+  --bs-gradient: none;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 8px 0;
+  box-shadow: 0px 14px 24px 0px rgba(27, 22, 66, 0.0588235294), 0px 0px 6px 0px rgba(0, 0, 0, 0.031372549);
+  letter-spacing: -0.18px;
+  padding: 15.5px 28px;
+}
+.hero-section .hero-background {
+  top: 95px;
+  right: 0;
+  max-width: 975px;
+}
+
 .try-section {
   max-width: 1920px;
   width: 100%;

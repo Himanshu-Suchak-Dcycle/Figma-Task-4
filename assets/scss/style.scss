@@ -46,6 +46,7 @@ $text-small: 14px;
   font-size: 18px;
   border-radius: 8px 0;
   box-shadow: 0px 14px 24px 0px #1b16420f, 0px 0px 6px 0px #00000008;
+  letter-spacing: -0.18px;
 }
 
 * {
@@ -101,6 +102,68 @@ h6 {
     }
   }
 }
+.hero-section {
+  @include wrapper();
+  clip-path: polygon(0 0, 100% 0, 100% 81.1%, 0% 100%);
+  background-color: $secondary-color;
+  padding: 95px 0 330px 142px;
+  .hero-content {
+    padding-top: 144px;
+    padding-bottom: 53px;
+    h1 {
+      max-width: 478px;
+      width: 100%;
+      font-size: $heading-medium;
+      color: $primary-color;
+      span {
+        color: $button-accent-color;
+      }
+    }
+    p {
+      max-width: 448px;
+      width: 100%;
+      font-size: $text-large;
+      line-height: 32px;
+      margin-top: 18px;
+    }
+    .btn-container {
+      margin-top: 36px;
+      gap: 18px;
+    }
+    .btn-primary {
+      @include btn();
+      padding: 15.5px 28px;
+    }
+    .btn-outline-primary {
+      --bs-btn-color: #{$button-accent-color};
+      --bs-btn-border-color: #{$button-accent-color};
+      --bs-btn-hover-color: #{$white-color};
+      --bs-btn-hover-bg: #{$button-accent-color};
+      --bs-btn-hover-border-color: #{$button-accent-color};
+      --bs-btn-focus-shadow-rgb: #{red($button-accent-color)},
+        #{green($button-accent-color)}, #{blue($button-accent-color)};
+      --bs-btn-active-color: #{$white-color};
+      --bs-btn-active-bg: #{$button-accent-color};
+      --bs-btn-active-border-color: #{$button-accent-color};
+      --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+      --bs-btn-disabled-color: #{$button-accent-color};
+      --bs-btn-disabled-bg: transparent;
+      --bs-btn-disabled-border-color: #{$button-accent-color};
+      --bs-gradient: none;
+      font-weight: 500;
+      font-size: 18px;
+      border-radius: 8px 0;
+      box-shadow: 0px 14px 24px 0px #1b16420f, 0px 0px 6px 0px #00000008;
+      letter-spacing: -0.18px;
+      padding: 15.5px 28px;
+    }
+  }
+  .hero-background {
+    top: 95px;
+    right: 0;
+    max-width: 975px;
+  }
+}
 .try-section {
   @include wrapper();
   .try-content {
@@ -124,7 +187,6 @@ h6 {
     }
     .btn-primary {
       @include btn();
-      letter-spacing: -0.18px;
       padding: 12.5px 28px;
     }
   }
