@@ -49,40 +49,43 @@ h6 {
   color: #1b1642;
 }
 
-.hero-section {
+.hero-full-width-background {
+  background-color: #f3f8ff;
+  width: 100%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 81.1%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 81.1%, 0% 100%);
+}
+.hero-full-width-background .hero-section {
   max-width: 1920px;
   width: 100%;
   margin-inline: auto;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 81.1%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 81.1%, 0% 100%);
   background-color: #f3f8ff;
   padding: 95px 0 330px 142px;
 }
-.hero-section .hero-content {
-  padding-top: 144px;
-  padding-bottom: 53px;
+.hero-full-width-background .hero-section .hero-content {
+  padding-block: 144px 53px;
 }
-.hero-section .hero-content h1 {
+.hero-full-width-background .hero-section .hero-content h1 {
   max-width: 478px;
   width: 100%;
   font-size: 64px;
   color: #1b1642;
 }
-.hero-section .hero-content h1 span {
+.hero-full-width-background .hero-section .hero-content h1 span {
   color: #6658ea;
 }
-.hero-section .hero-content p {
+.hero-full-width-background .hero-section .hero-content p {
   max-width: 448px;
   width: 100%;
   font-size: 20px;
   line-height: 32px;
   margin-top: 18px;
 }
-.hero-section .hero-content .btn-container {
+.hero-full-width-background .hero-section .hero-content .btn-container {
   margin-top: 36px;
   gap: 18px;
 }
-.hero-section .hero-content .btn-primary {
+.hero-full-width-background .hero-section .hero-content .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #6658ea;
   --bs-btn-border-color: #6658ea;
@@ -104,7 +107,7 @@ h6 {
   letter-spacing: -0.18px;
   padding: 15.5px 28px;
 }
-.hero-section .hero-content .btn-outline-primary {
+.hero-full-width-background .hero-section .hero-content .btn-outline-primary {
   --bs-btn-color: #6658ea;
   --bs-btn-border-color: #6658ea;
   --bs-btn-hover-color: #fff;
@@ -127,7 +130,7 @@ h6 {
   letter-spacing: -0.18px;
   padding: 15.5px 28px;
 }
-.hero-section .hero-background {
+.hero-full-width-background .hero-section .hero-background {
   top: 95px;
   right: 0;
   max-width: 975px;
@@ -186,40 +189,47 @@ h6 {
   background: linear-gradient(to right, #575a7b 20%, #f9655b 20% 40%, #ffc267 40% 60%, #6658ea 60% 80%, #ffcccc 80% 100%);
 }
 
-footer {
+.footer-full-width-background {
+  background-color: #1b1642;
+  width: 100%;
+}
+.footer-full-width-background footer {
+  max-width: 1920px;
+  width: 100%;
+  margin-inline: auto;
   padding: 101px 208px 129px 166px;
   background-color: #1b1642;
   color: #fff;
 }
-footer .footer-bg-element {
+.footer-full-width-background footer .footer-bg-element {
   top: -184px;
   right: 0;
 }
-footer .company-details h2 {
+.footer-full-width-background footer .company-details h2 {
   font-size: 24px;
 }
-footer .company-details p {
+.footer-full-width-background footer .company-details p {
   font-size: 18px;
   opacity: 0.6;
 }
-footer .foot-links .products {
+.footer-full-width-background footer .foot-links .products {
   padding-left: 84px;
 }
-footer .foot-links .services-1 {
+.footer-full-width-background footer .foot-links .services-1 {
   padding-left: 104px;
 }
-footer .foot-links .connect {
+.footer-full-width-background footer .foot-links .connect {
   padding-left: 84px;
 }
-footer .foot-links ul {
+.footer-full-width-background footer .foot-links ul {
   list-style-type: none;
 }
-footer .foot-links ul .head {
+.footer-full-width-background footer .foot-links ul .head {
   font-size: 14px;
   opacity: 1;
   padding-bottom: 23px;
 }
-footer .foot-links ul li {
+.footer-full-width-background footer .foot-links ul li {
   font-size: 18px;
   opacity: 0.6;
   cursor: pointer;
@@ -227,40 +237,112 @@ footer .foot-links ul li {
 }
 
 @media screen and (max-width: 1400px) {
+  .hero-full-width-background .hero-section {
+    padding: 80px 0 285px 110px;
+  }
+  .hero-full-width-background .hero-section .hero-content {
+    padding-block: 110px 40px;
+  }
+  .hero-full-width-background .hero-section .hero-content h1 {
+    font-size: 56px;
+  }
+  .hero-full-width-background .hero-section .hero-content p {
+    max-width: 406px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .hero-full-width-background .hero-section .hero-content .btn-container {
+    margin-top: 31px;
+  }
+  .hero-full-width-background .hero-section .hero-content .btn-container .btn {
+    font-size: 16px;
+  }
+  .hero-full-width-background .hero-section .hero-background {
+    max-width: 830px;
+  }
   .try-section .try-content {
     padding: 180px 290px 230px 290px;
   }
-  footer {
+  .footer-full-width-background footer {
     padding: 80px 180px 110px 140px;
   }
-  footer .foot-links .products {
+  .footer-full-width-background footer .foot-links .products {
     padding-left: 70px;
   }
-  footer .foot-links .services-1 {
+  .footer-full-width-background footer .foot-links .services-1 {
     padding-left: 90px;
   }
-  footer .foot-links .connect {
+  .footer-full-width-background footer .foot-links .connect {
     padding-left: 70px;
   }
 }
 @media screen and (max-width: 1200px) {
+  .hero-full-width-background .hero-section {
+    padding: 80px 0 250px 70px;
+  }
+  .hero-full-width-background .hero-section .hero-content {
+    padding-block: 85px 40px;
+  }
+  .hero-full-width-background .hero-section .hero-content h1 {
+    max-width: 442px;
+    font-size: 48px;
+  }
+  .hero-full-width-background .hero-section .hero-content .btn-container {
+    margin-top: 25px;
+  }
+  .hero-full-width-background .hero-section .hero-content .btn-container .btn {
+    padding: 10.5px 25px;
+  }
+  .hero-full-width-background .hero-section .hero-background {
+    max-width: 720px;
+  }
   .try-section .try-content {
     padding: 150px 234px 200px 234px;
   }
-  footer {
+  .footer-full-width-background footer {
     padding: 70px 100px 100px 90px;
   }
-  footer .foot-links .products {
+  .footer-full-width-background footer .foot-links .products {
     padding-left: 60px;
   }
-  footer .foot-links .services-1 {
+  .footer-full-width-background footer .foot-links .services-1 {
     padding-left: 60px;
   }
-  footer .foot-links .connect {
+  .footer-full-width-background footer .foot-links .connect {
     padding-left: 60px;
   }
 }
 @media screen and (max-width: 992px) {
+  .hero-full-width-background {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
+  }
+  .hero-full-width-background .hero-section {
+    padding: 0 0 200px;
+  }
+  .hero-full-width-background .hero-section .hero-content {
+    margin-inline: auto;
+    padding: 50px 0 0;
+  }
+  .hero-full-width-background .hero-section .hero-content h1 {
+    text-align: center;
+  }
+  .hero-full-width-background .hero-section .hero-content h1 span {
+    position: relative;
+    text-decoration: none;
+  }
+  .hero-full-width-background .hero-section .hero-content h1 span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 12px;
+    width: 100%;
+    height: 7px;
+    background-color: rgba(102, 88, 234, 0.2);
+  }
+  .hero-full-width-background .hero-section .hero-content p {
+    text-align: center;
+  }
   .try-section .try-content {
     padding: 130px 200px 200px 190px;
   }
@@ -277,7 +359,7 @@ footer .foot-links ul li {
   .header nav .navbar-nav {
     padding-block: 25px;
   }
-  footer {
+  .footer-full-width-background footer {
     row-gap: 30px;
   }
 }
@@ -285,48 +367,60 @@ footer .foot-links ul li {
   .try-section .try-content {
     padding: 100px 105px 200px 105px;
   }
-  footer {
+  .footer-full-width-background footer {
     padding: 70px 24px;
   }
-  footer .foot-links ul li {
+  .footer-full-width-background footer .foot-links ul li {
     font-size: 16px;
   }
-  footer .foot-links .products,
-  footer .foot-links .services-1,
-  footer .foot-links .connect {
+  .footer-full-width-background footer .foot-links .products,
+  .footer-full-width-background footer .foot-links .services-1,
+  .footer-full-width-background footer .foot-links .connect {
     padding-left: 55px;
   }
 }
 @media screen and (max-width: 568px) {
+  .hero-full-width-background .hero-section .hero-content h1 {
+    font-size: 40px;
+    padding-inline: 16px;
+  }
+  .hero-full-width-background .hero-section .hero-content p {
+    padding-inline: 21px 29px;
+    margin-top: 13px;
+  }
+  .hero-full-width-background .hero-section .hero-content .btn-container {
+    padding-inline: 14px;
+    flex-wrap: wrap;
+  }
   .try-section .try-content {
     padding: 100px 22px 322px 24px;
   }
-  footer {
+  .footer-full-width-background footer {
     width: 100%;
   }
-  footer .footer-bg-element {
+  .footer-full-width-background footer .footer-bg-element {
     display: none !important;
   }
-  footer .footer-mobile-bg-element {
+  .footer-full-width-background footer .footer-mobile-bg-element {
     display: block !important;
     top: -161px;
     right: 0;
   }
-  footer .footer-mobile-pattern {
+  .footer-full-width-background footer .footer-mobile-pattern {
     display: block !important;
     top: -231px;
     right: 49px;
   }
-  footer .foot-links {
+  .footer-full-width-background footer .foot-links {
     justify-content: start;
     flex-wrap: wrap;
     -moz-column-gap: 25px;
          column-gap: 25px;
     row-gap: 10px;
   }
-  footer .foot-links .products,
-  footer .foot-links .services-1,
-  footer .foot-links .connect {
+  .footer-full-width-background footer .foot-links .products,
+  .footer-full-width-background footer .foot-links .services-1,
+  .footer-full-width-background footer .foot-links .connect {
     padding-left: 0;
   }
 }

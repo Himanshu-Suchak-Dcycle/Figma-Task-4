@@ -47,28 +47,47 @@
         </div>
       </nav>
     </header>
-    <section class="hero-section d-flex flex-column-reverse flex-lg-row position-relative">
-      <div class="hero-content z-1">
-        <h1 class="mb-0">Modern design <span>made simple.</span></h1>
-        <p class="mb-0">
-          We’ll handle all your finances for free without you ever seeing a
-          person. No fees. No bullshit.
-        </p>
-        <div class="btn-container d-flex">
-          <button class="btn btn-primary">Get Started</button>
-          <button class="btn btn-outline-primary">Learn More</button>
+    <div class="hero-full-width-background">
+      <section
+        class="hero-section d-flex flex-column-reverse flex-lg-row position-relative"
+      >
+        <div class="hero-content z-1 text-center text-lg-start">
+          <h1 class="mb-0 d-none d-lg-block">
+            Modern design <span>made simple.</span>
+          </h1>
+          <h1 class="mb-0 d-block d-lg-none">
+            Plan your future <span>without hassle</span>
+          </h1>
+          <p class="mb-0 mx-auto mx-lg-0">
+            We’ll handle all your finances for free without you ever seeing a
+            person. No fees. No bullshit.
+          </p>
+          <div
+            class="btn-container d-flex justify-content-center justify-content-lg-start"
+          >
+            <button class="btn btn-primary">Get Started</button>
+            <button class="btn btn-outline-primary">Learn More</button>
+          </div>
         </div>
-      </div>
-      <div class="hero-background position-absolute">
-        <img
-          src="/assets/images/here-background.png"
-          alt="hero section background"
-          class="img-fluid"
-        />
-      </div>
-    </section>
+        <div class="hero-mobile-background d-block d-lg-none">
+          <img
+            src="/assets/images/hero-mobile-background.png"
+            alt="hero-mobile-background"
+            class="img-fluid"
+          />
+        </div>
+        <div class="hero-background position-absolute d-none d-lg-block">
+          <img
+            src="/assets/images/here-background.png"
+            alt="hero section background"
+            class="img-fluid"
+          />
+        </div>
+      </section>
+    </div>
 
     <div class="bg-ino" style="min-height: 100vh"></div>
+    
     <section class="try-section">
       <div class="try-content text-center">
         <p class="mb-0 fw-bold sub-head">MANAGEMENT FUND</p>
@@ -80,56 +99,67 @@
         <button class="btn btn-primary">Get started</button>
       </div>
     </section>
+
     <span class="custom-border d-block w-100 sticky-top"></span>
-    <footer
-      class="d-flex flex-column flex-lg-row justify-content-between position-relative mx-auto"
-    >
-      <div class="footer-bg-element position-absolute d-block">
-        <img src="/assets/images/footer-element.svg" alt="" class="img-fluid" />
-      </div>
-      <div class="footer-mobile-bg-element position-absolute d-none">
-        <img
-          src="/assets/images/footer-mobile-bg-element.svg"
-          alt=""
-          class="img-fluid"
-        />
-      </div>
-      <div class="footer-mobile-pattern position-absolute d-none">
-        <img src="/assets/images/Circle Pattern.svg" alt="" class="img-fluid" />
-      </div>
-      <div class="company-details">
-        <h2 class="m-0">Goodkit</h2>
-        <p class="m-0">A better way to build.</p>
-      </div>
-      <div class="foot-links d-flex align-items-start">
-        <ul class="services m-0 ps-0">
-          <li class="head fw-bold">SERVICES</li>
-          <li>Help Center</li>
-          <li>Press</li>
-          <li>About us</li>
-        </ul>
-        <ul class="products m-0">
-          <li class="head fw-bold">PRODUCTS</li>
-          <li>Homepage</li>
-          <li>Pages</li>
-          <li>Legal</li>
-          <li>Terms</li>
-        </ul>
-        <ul class="services-1 m-0">
-          <li class="head fw-bold">SERVICES</li>
-          <li>Help Center</li>
-          <li>Press</li>
-          <li>About us</li>
-        </ul>
-        <ul class="connect m-0">
-          <li class="head fw-bold">CONNECT</li>
-          <li>Help Center</li>
-          <li>Press</li>
-          <li>About us</li>
-          <li>Pages</li>
-        </ul>
-      </div>
-    </footer>
+    <div class="footer-full-width-background">
+      <footer
+        class="d-flex flex-column flex-lg-row justify-content-between position-relative mx-auto"
+      >
+        <div class="footer-bg-element position-absolute d-block">
+          <img
+            src="/assets/images/footer-element.svg"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+        <div class="footer-mobile-bg-element position-absolute d-none">
+          <img
+            src="/assets/images/footer-mobile-bg-element.svg"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+        <div class="footer-mobile-pattern position-absolute d-none">
+          <img
+            src="/assets/images/Circle Pattern.svg"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+        <div class="company-details">
+          <h2 class="m-0">Goodkit</h2>
+          <p class="m-0">A better way to build.</p>
+        </div>
+        <div class="foot-links d-flex align-items-start">
+          <ul class="services m-0 ps-0">
+            <li class="head fw-bold">SERVICES</li>
+            <li>Help Center</li>
+            <li>Press</li>
+            <li>About us</li>
+          </ul>
+          <ul class="products m-0">
+            <li class="head fw-bold">PRODUCTS</li>
+            <li>Homepage</li>
+            <li>Pages</li>
+            <li>Legal</li>
+            <li>Terms</li>
+          </ul>
+          <ul class="services-1 m-0">
+            <li class="head fw-bold">SERVICES</li>
+            <li>Help Center</li>
+            <li>Press</li>
+            <li>About us</li>
+          </ul>
+          <ul class="connect m-0">
+            <li class="head fw-bold">CONNECT</li>
+            <li>Help Center</li>
+            <li>Press</li>
+            <li>About us</li>
+            <li>Pages</li>
+          </ul>
+        </div>
+      </footer>
+    </div>
     <!-- ! Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

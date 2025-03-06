@@ -48,6 +48,19 @@ $text-small: 14px;
   box-shadow: 0px 14px 24px 0px #1b16420f, 0px 0px 6px 0px #00000008;
   letter-spacing: -0.18px;
 }
+@mixin custom-underline($color, $thickness, $offset, $opacity) {
+  position: relative;
+  text-decoration: none;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: $offset;
+    width: 100%;
+    height: $thickness;
+    background-color: rgba($color, $opacity);
+  }
+}
 
 * {
   margin: 0;
@@ -102,66 +115,69 @@ h6 {
     }
   }
 }
-.hero-section {
-  @include wrapper();
-  clip-path: polygon(0 0, 100% 0, 100% 81.1%, 0% 100%);
+.hero-full-width-background {
   background-color: $secondary-color;
-  padding: 95px 0 330px 142px;
-  .hero-content {
-    padding-top: 144px;
-    padding-bottom: 53px;
-    h1 {
-      max-width: 478px;
-      width: 100%;
-      font-size: $heading-medium;
-      color: $primary-color;
-      span {
-        color: $button-accent-color;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 81.1%, 0% 100%);
+  .hero-section {
+    @include wrapper();
+    background-color: $secondary-color;
+    padding: 95px 0 330px 142px;
+    .hero-content {
+      padding-block: 144px 53px;
+      h1 {
+        max-width: 478px;
+        width: 100%;
+        font-size: $heading-medium;
+        color: $primary-color;
+        span {
+          color: $button-accent-color;
+        }
+      }
+      p {
+        max-width: 448px;
+        width: 100%;
+        font-size: $text-large;
+        line-height: 32px;
+        margin-top: 18px;
+      }
+      .btn-container {
+        margin-top: 36px;
+        gap: 18px;
+      }
+      .btn-primary {
+        @include btn();
+        padding: 15.5px 28px;
+      }
+      .btn-outline-primary {
+        --bs-btn-color: #{$button-accent-color};
+        --bs-btn-border-color: #{$button-accent-color};
+        --bs-btn-hover-color: #{$white-color};
+        --bs-btn-hover-bg: #{$button-accent-color};
+        --bs-btn-hover-border-color: #{$button-accent-color};
+        --bs-btn-focus-shadow-rgb: #{red($button-accent-color)},
+          #{green($button-accent-color)}, #{blue($button-accent-color)};
+        --bs-btn-active-color: #{$white-color};
+        --bs-btn-active-bg: #{$button-accent-color};
+        --bs-btn-active-border-color: #{$button-accent-color};
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: #{$button-accent-color};
+        --bs-btn-disabled-bg: transparent;
+        --bs-btn-disabled-border-color: #{$button-accent-color};
+        --bs-gradient: none;
+        font-weight: 500;
+        font-size: 18px;
+        border-radius: 8px 0;
+        box-shadow: 0px 14px 24px 0px #1b16420f, 0px 0px 6px 0px #00000008;
+        letter-spacing: -0.18px;
+        padding: 15.5px 28px;
       }
     }
-    p {
-      max-width: 448px;
-      width: 100%;
-      font-size: $text-large;
-      line-height: 32px;
-      margin-top: 18px;
+    .hero-background {
+      top: 95px;
+      right: 0;
+      max-width: 975px;
     }
-    .btn-container {
-      margin-top: 36px;
-      gap: 18px;
-    }
-    .btn-primary {
-      @include btn();
-      padding: 15.5px 28px;
-    }
-    .btn-outline-primary {
-      --bs-btn-color: #{$button-accent-color};
-      --bs-btn-border-color: #{$button-accent-color};
-      --bs-btn-hover-color: #{$white-color};
-      --bs-btn-hover-bg: #{$button-accent-color};
-      --bs-btn-hover-border-color: #{$button-accent-color};
-      --bs-btn-focus-shadow-rgb: #{red($button-accent-color)},
-        #{green($button-accent-color)}, #{blue($button-accent-color)};
-      --bs-btn-active-color: #{$white-color};
-      --bs-btn-active-bg: #{$button-accent-color};
-      --bs-btn-active-border-color: #{$button-accent-color};
-      --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-      --bs-btn-disabled-color: #{$button-accent-color};
-      --bs-btn-disabled-bg: transparent;
-      --bs-btn-disabled-border-color: #{$button-accent-color};
-      --bs-gradient: none;
-      font-weight: 500;
-      font-size: 18px;
-      border-radius: 8px 0;
-      box-shadow: 0px 14px 24px 0px #1b16420f, 0px 0px 6px 0px #00000008;
-      letter-spacing: -0.18px;
-      padding: 15.5px 28px;
-    }
-  }
-  .hero-background {
-    top: 95px;
-    right: 0;
-    max-width: 975px;
   }
 }
 .try-section {
@@ -202,92 +218,166 @@ h6 {
     #ffcccc 80% 100%
   );
 }
-footer {
-  .footer-bg-element {
-    top: -184px;
-    right: 0;
-  }
-  padding: 101px 208px 129px 166px;
+.footer-full-width-background {
   background-color: $primary-color;
-  color: $white-color;
-  .company-details {
-    h2 {
-      font-size: $logo-size;
+  width: 100%;
+  footer {
+    @include wrapper();
+    .footer-bg-element {
+      top: -184px;
+      right: 0;
     }
-    p {
-      font-size: $text-medium;
-      opacity: 0.6;
-    }
-  }
-  .foot-links {
-    .products {
-      padding-left: 84px;
-    }
-    .services-1 {
-      padding-left: 104px;
-    }
-    .connect {
-      padding-left: 84px;
-    }
-    ul {
-      list-style-type: none;
-      .head {
-        font-size: $text-small;
-        opacity: 1;
-        padding-bottom: 23px;
+    padding: 101px 208px 129px 166px;
+    background-color: $primary-color;
+    color: $white-color;
+    .company-details {
+      h2 {
+        font-size: $logo-size;
       }
-      li {
+      p {
         font-size: $text-medium;
         opacity: 0.6;
-        cursor: pointer;
-        padding-bottom: 16px;
+      }
+    }
+    .foot-links {
+      .products {
+        padding-left: 84px;
+      }
+      .services-1 {
+        padding-left: 104px;
+      }
+      .connect {
+        padding-left: 84px;
+      }
+      ul {
+        list-style-type: none;
+        .head {
+          font-size: $text-small;
+          opacity: 1;
+          padding-bottom: 23px;
+        }
+        li {
+          font-size: $text-medium;
+          opacity: 0.6;
+          cursor: pointer;
+          padding-bottom: 16px;
+        }
       }
     }
   }
 }
 @media screen and (max-width: 1400px) {
+  .hero-full-width-background {
+    .hero-section {
+      padding: 80px 0 285px 110px;
+      .hero-content {
+        padding-block: 110px 40px;
+        h1 {
+          font-size: 56px;
+        }
+        p {
+          max-width: 406px;
+          font-size: $text-medium;
+          line-height: 30px;
+        }
+        .btn-container {
+          margin-top: 31px;
+          .btn {
+            font-size: 16px;
+          }
+        }
+      }
+      .hero-background {
+        max-width: 830px;
+      }
+    }
+  }
   .try-section {
     .try-content {
       padding: 180px 290px 230px 290px;
     }
   }
-  footer {
-    padding: 80px 180px 110px 140px;
-    .foot-links {
-      .products {
-        padding-left: 70px;
-      }
-      .services-1 {
-        padding-left: 90px;
-      }
-      .connect {
-        padding-left: 70px;
+  .footer-full-width-background {
+    footer {
+      padding: 80px 180px 110px 140px;
+      .foot-links {
+        .products {
+          padding-left: 70px;
+        }
+        .services-1 {
+          padding-left: 90px;
+        }
+        .connect {
+          padding-left: 70px;
+        }
       }
     }
   }
 }
 @media screen and (max-width: 1200px) {
+  .hero-full-width-background {
+    .hero-section {
+      padding: 80px 0 250px 70px;
+      .hero-content {
+        padding-block: 85px 40px;
+        h1 {
+          max-width: 442px;
+          font-size: $heading-small;
+        }
+        .btn-container {
+          margin-top: 25px;
+          .btn {
+            padding: 10.5px 25px;
+          }
+        }
+      }
+      .hero-background {
+        max-width: 720px;
+      }
+    }
+  }
   .try-section {
     .try-content {
       padding: 150px 234px 200px 234px;
     }
   }
-  footer {
-    padding: 70px 100px 100px 90px;
-    .foot-links {
-      .products {
-        padding-left: 60px;
-      }
-      .services-1 {
-        padding-left: 60px;
-      }
-      .connect {
-        padding-left: 60px;
+  .footer-full-width-background {
+    footer {
+      padding: 70px 100px 100px 90px;
+      .foot-links {
+        .products {
+          padding-left: 60px;
+        }
+        .services-1 {
+          padding-left: 60px;
+        }
+        .connect {
+          padding-left: 60px;
+        }
       }
     }
   }
 }
 @media screen and (max-width: 992px) {
+  .hero-full-width-background {
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
+    .hero-section {
+      padding: 0 0 200px;
+      .hero-content {
+        margin-inline: auto;
+        padding: 50px 0 0;
+        h1 {
+          text-align: center;
+          span {
+            @include custom-underline($button-accent-color, 7px, 12px, 0.2);
+          }
+        }
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
   .try-section {
     .try-content {
       padding: 130px 200px 200px 190px;
@@ -308,8 +398,10 @@ footer {
       }
     }
   }
-  footer {
-    row-gap: 30px;
+  .footer-full-width-background {
+    footer {
+      row-gap: 30px;
+    }
   }
 }
 @media screen and (max-width: 768px) {
@@ -318,52 +410,74 @@ footer {
       padding: 100px 105px 200px 105px;
     }
   }
-  footer {
-    padding: 70px 24px;
-    .foot-links {
-      ul {
-        li {
-          font-size: $text-regular;
+  .footer-full-width-background {
+    footer {
+      padding: 70px 24px;
+      .foot-links {
+        ul {
+          li {
+            font-size: $text-regular;
+          }
         }
-      }
-      .products,
-      .services-1,
-      .connect {
-        padding-left: 55px;
+        .products,
+        .services-1,
+        .connect {
+          padding-left: 55px;
+        }
       }
     }
   }
 }
 @media screen and (max-width: 568px) {
+  .hero-full-width-background {
+    .hero-section {
+      .hero-content {
+        h1 {
+          font-size: 40px;
+          padding-inline: 16px;
+        }
+        p {
+          padding-inline: 21px 29px;
+          margin-top: 13px;
+        }
+        .btn-container {
+          padding-inline: 14px;
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
   .try-section {
     .try-content {
       padding: 100px 22px 322px 24px;
     }
   }
-  footer {
-    .footer-bg-element {
-      display: none !important;
-    }
-    .footer-mobile-bg-element {
-      display: block !important;
-      top: -161px;
-      right: 0;
-    }
-    .footer-mobile-pattern {
-      display: block !important;
-      top: -231px;
-      right: 49px;
-    }
-    width: 100%;
-    .foot-links {
-      justify-content: start;
-      flex-wrap: wrap;
-      column-gap: 25px;
-      row-gap: 10px;
-      .products,
-      .services-1,
-      .connect {
-        padding-left: 0;
+  .footer-full-width-background {
+    footer {
+      .footer-bg-element {
+        display: none !important;
+      }
+      .footer-mobile-bg-element {
+        display: block !important;
+        top: -161px;
+        right: 0;
+      }
+      .footer-mobile-pattern {
+        display: block !important;
+        top: -231px;
+        right: 49px;
+      }
+      width: 100%;
+      .foot-links {
+        justify-content: start;
+        flex-wrap: wrap;
+        column-gap: 25px;
+        row-gap: 10px;
+        .products,
+        .services-1,
+        .connect {
+          padding-left: 0;
+        }
       }
     }
   }
