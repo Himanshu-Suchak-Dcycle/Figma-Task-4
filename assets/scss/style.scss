@@ -95,7 +95,7 @@ h6 {
     );
   }
   nav {
-    padding-top: 32px !important;
+    padding-block: 32px 20px !important;
     .mobile-logo {
       font-size: $logo-size;
       cursor: pointer;
@@ -187,9 +187,9 @@ h6 {
   margin-top: -330px;
   .revenue-card-section {
     margin-left: 160px;
+    max-width: 448px;
+    width: 100%;
     .revenue-card {
-      max-width: 448px;
-      width: 100%;
       border-top: 3px solid #7085f5;
       background-color: $white-color;
       box-shadow: 0px 44px 74px 0px #1a15470f, 0px 0px 24px 0px #0000000a;
@@ -260,6 +260,9 @@ h6 {
         font-size: $text-medium;
         color: $text-color;
         padding-left: 15px;
+      }
+      li:nth-child(2) {
+        padding-top: 15px;
       }
     }
   }
@@ -382,7 +385,7 @@ h6 {
       padding: 55px 65px 35px 134px;
       h2 {
         font-size: 44px;
-        max-width: 422px;
+        max-width: 384px;
       }
       .list-group {
         gap: 45px;
@@ -444,9 +447,9 @@ h6 {
   .invest-section {
     .revenue-card-section {
       margin-left: 100px;
+      max-width: 400px;
+      width: 100%;
       .revenue-card {
-        max-width: 400px;
-        width: 100%;
         .value {
           font-size: 40px;
         }
@@ -553,7 +556,7 @@ h6 {
   }
   .header {
     nav {
-      padding-top: 15px !important;
+      padding-block: 15px !important;
       .navbar-nav {
         padding-block: 25px;
       }
@@ -613,13 +616,14 @@ h6 {
     margin-top: -175px;
     .revenue-card-section {
       padding-inline: 24px;
+      max-width: 399px;
+      width: 100%;
       .revenue-card {
-        max-width: 351px;
-        width: 100%;
         .value {
           font-size: 36px;
         }
-        .annual-revenue, .losses {
+        .annual-revenue,
+        .losses {
           .sub-head {
             padding-bottom: 17px;
           }
@@ -631,21 +635,28 @@ h6 {
           padding-bottom: 38px;
         }
         .plus-bg-element {
-          top: -52px;
-          transform: translateX(13%);
+          top: -30px;
+          left: 50%;
+          transform: translateX(-50%);
         }
       }
     }
     .invest-content {
-      padding-inline: 29px 24px;
-      max-width: 346px;
+      padding-inline: 27px 24px;
+      max-width: 398px;
+      width: 100%;
       h2 {
         font-size: 36px;
       }
       .list-group {
-        gap: 38px;
+        gap: 39px;
         flex-wrap: wrap;
         row-gap: 15px;
+        ul {
+          li:nth-child(2) {
+            padding-top: 15px;
+          }
+        }
       }
     }
   }

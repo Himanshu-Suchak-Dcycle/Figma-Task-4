@@ -27,7 +27,7 @@ h6 {
   background: linear-gradient(to right, #575a7b 20%, #f9655b 20% 40%, #ffc267 40% 60%, #6658ea 60% 80%, #ffcccc 80% 100%);
 }
 .header nav {
-  padding-top: 32px !important;
+  padding-block: 32px 20px !important;
 }
 .header nav .mobile-logo {
   font-size: 24px;
@@ -145,10 +145,10 @@ h6 {
 }
 .invest-section .revenue-card-section {
   margin-left: 160px;
-}
-.invest-section .revenue-card-section .revenue-card {
   max-width: 448px;
   width: 100%;
+}
+.invest-section .revenue-card-section .revenue-card {
   border-top: 3px solid #7085f5;
   background-color: #fff;
   box-shadow: 0px 44px 74px 0px rgba(26, 21, 71, 0.0588235294), 0px 0px 24px 0px rgba(0, 0, 0, 0.0392156863);
@@ -232,6 +232,9 @@ h6 {
   font-size: 18px;
   color: #575a7b;
   padding-left: 15px;
+}
+.invest-section .invest-content .list-group li:nth-child(2) {
+  padding-top: 15px;
 }
 
 .try-section {
@@ -366,7 +369,7 @@ h6 {
   }
   .invest-section .invest-content h2 {
     font-size: 44px;
-    max-width: 422px;
+    max-width: 384px;
   }
   .invest-section .invest-content .list-group {
     gap: 45px;
@@ -415,8 +418,6 @@ h6 {
   }
   .invest-section .revenue-card-section {
     margin-left: 100px;
-  }
-  .invest-section .revenue-card-section .revenue-card {
     max-width: 400px;
     width: 100%;
   }
@@ -525,7 +526,7 @@ h6 {
     width: 100%;
   }
   .header nav {
-    padding-top: 15px !important;
+    padding-block: 15px !important;
   }
   .header nav .navbar-nav {
     padding-block: 25px;
@@ -571,15 +572,14 @@ h6 {
   }
   .invest-section .revenue-card-section {
     padding-inline: 24px;
-  }
-  .invest-section .revenue-card-section .revenue-card {
-    max-width: 351px;
+    max-width: 399px;
     width: 100%;
   }
   .invest-section .revenue-card-section .revenue-card .value {
     font-size: 36px;
   }
-  .invest-section .revenue-card-section .revenue-card .annual-revenue .sub-head, .invest-section .revenue-card-section .revenue-card .losses .sub-head {
+  .invest-section .revenue-card-section .revenue-card .annual-revenue .sub-head,
+  .invest-section .revenue-card-section .revenue-card .losses .sub-head {
     padding-bottom: 17px;
   }
   .invest-section .revenue-card-section .revenue-card .annual-revenue {
@@ -589,20 +589,25 @@ h6 {
     padding-bottom: 38px;
   }
   .invest-section .revenue-card-section .revenue-card .plus-bg-element {
-    top: -52px;
-    transform: translateX(13%);
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .invest-section .invest-content {
-    padding-inline: 29px 24px;
-    max-width: 346px;
+    padding-inline: 27px 24px;
+    max-width: 398px;
+    width: 100%;
   }
   .invest-section .invest-content h2 {
     font-size: 36px;
   }
   .invest-section .invest-content .list-group {
-    gap: 38px;
+    gap: 39px;
     flex-wrap: wrap;
     row-gap: 15px;
+  }
+  .invest-section .invest-content .list-group ul li:nth-child(2) {
+    padding-top: 15px;
   }
   .try-section .try-content {
     padding: 100px 22px 322px 24px;
