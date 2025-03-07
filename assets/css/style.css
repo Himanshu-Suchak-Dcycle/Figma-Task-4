@@ -237,6 +237,44 @@ h6 {
   padding-top: 15px;
 }
 
+.advisor-section {
+  max-width: 1920px;
+  width: 100%;
+  margin-inline: auto;
+}
+.advisor-section .advisor-content {
+  padding-inline: 141px 70px;
+}
+.advisor-section .advisor-content h2 {
+  font-size: 48px;
+  line-height: 108%;
+  color: #1b1642;
+  max-width: 460px;
+  width: 100%;
+}
+.advisor-section .advisor-content p {
+  font-size: 18px;
+  line-height: 160%;
+}
+.advisor-section .advisor-content .sub-head1 {
+  margin-top: 36px;
+}
+.advisor-section .advisor-content .sub-head {
+  font-size: 20px;
+  color: #1b1642;
+  margin-top: 25px;
+}
+.advisor-section .advisor-content .content {
+  color: #575a7b;
+  max-width: 462px;
+  width: 100%;
+  margin-top: 7px;
+}
+.advisor-section .advisor-background {
+  max-width: 711.2px;
+  width: 100%;
+}
+
 .check-investment-section {
   max-width: 1920px;
   width: 100%;
@@ -625,6 +663,15 @@ h6 {
   .invest-section .revenue-card-section .revenue-card .value {
     font-size: 44px;
   }
+  .advisor-section .advisor-content {
+    padding-inline: 110px 0;
+  }
+  .advisor-section .advisor-content h2 {
+    font-size: 44px;
+  }
+  .advisor-section .advisor-background {
+    max-width: 677.2px;
+  }
   .check-investment-section .check-background {
     margin-left: 80px;
   }
@@ -736,6 +783,16 @@ h6 {
   }
   .invest-section .invest-content h2 {
     font-size: 40px;
+  }
+  .advisor-section .advisor-content {
+    padding-left: 70px;
+  }
+  .advisor-section .advisor-content h2 {
+    font-size: 40px;
+    max-width: 437px;
+  }
+  .advisor-section .advisor-background {
+    max-width: 469px;
   }
   .check-investment-section {
     margin-top: 130px;
@@ -852,6 +909,13 @@ h6 {
   }
   .invest-section .invest-content .list-group {
     gap: 40px;
+  }
+  .advisor-section {
+    align-items: center;
+  }
+  .advisor-section .advisor-content {
+    padding-left: 0;
+    margin-top: 16.05px;
   }
   .check-investment-section .check-background {
     max-width: 352px;
@@ -979,6 +1043,17 @@ h6 {
   }
   .invest-section .invest-content .list-group ul li:nth-child(2) {
     padding-top: 15px;
+  }
+  .advisor-section .advisor-content {
+    padding-inline: 24px 34px;
+    margin-top: 16px;
+  }
+  .advisor-section .advisor-content h2 {
+    font-size: 36px;
+  }
+  .advisor-section .advisor-content .sub-head1,
+  .advisor-section .advisor-content .sub-head {
+    font-size: 18px;
   }
   .check-investment-section .check-background {
     max-width: 400px;
