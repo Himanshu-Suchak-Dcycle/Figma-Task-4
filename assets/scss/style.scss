@@ -267,6 +267,154 @@ h6 {
     }
   }
 }
+.pricing-section {
+  margin-inline: 173px 115px;
+  .pricing-head {
+    margin-top: 169px;
+    hr {
+      max-width: 71px;
+      width: 100%;
+      border: 5px solid $highlight-color;
+    }
+    h2 {
+      margin-top: 82px;
+      font-size: $heading-medium;
+      // color: $white-color;
+      line-height: 108%;
+      span {
+        @include custom-underline($button-accent-color, 10px, 16px, 0.2);
+      }
+    }
+    p {
+      margin-top: 13px;
+      max-width: 558px;
+      width: 100%;
+      font-size: $text-medium;
+      line-height: 160%;
+      // color: $white-color;
+    }
+  }
+  .pricing-plans {
+    max-width: 1152px;
+    margin-top: 77px;
+    .standard-card {
+      max-width: 611px;
+      width: 100%;
+      box-shadow: 0px 44px 74px 0px #1a15470f, 0px 0px 24px 0px #0000000a;
+      .pricing-bg-element {
+        left: -73px;
+        bottom: -72px;
+      }
+      .standard-card-head {
+        padding: 56px 40px 77px 46px;
+        h3 {
+          font-size: $heading-small;
+          line-height: 108%;
+          color: $primary-color;
+        }
+        p {
+          font-size: $text-medium;
+          line-height: 160%;
+          color: $primary-color;
+          margin-top: 6px;
+          max-width: 418px;
+          width: 100%;
+        }
+      }
+      .standard-pricings {
+        .additional-fee,
+        .rebalance,
+        .support,
+        .total-pricing {
+          margin-inline: 62px 65px;
+          border-top: 1px solid #eaf2fe;
+          p {
+            font-size: $text-medium;
+            line-height: 160%;
+            color: $primary-color;
+          }
+        }
+        .additional-fee, .rebalance {
+          padding-block: 20px 24px;
+        }
+        .support {
+          padding-block: 20px 75px;
+        }
+        .total-pricing {
+          margin-inline: 0;
+          padding: 32px 63px 38px 39px;
+          p {
+            font-size: $heading-small;
+            line-height: 107%;
+            letter-spacing: -0.96px;
+            .currency {
+              font-size: 23px;
+              letter-spacing: normal;
+              vertical-align: middle;
+            }
+            .duration {
+              font-size: 28px;
+              letter-spacing: -0.84px;
+              vertical-align: middle;
+            }
+          }
+          .btn-primary {
+            @include btn();
+            padding: 12.5px 28px;
+          }
+        }
+      }
+    }
+    .professional-card {
+      max-width: 541px;
+      width: 100%;
+      margin-block: 32px;
+      box-shadow: 0px 44px 74px 0px #1a15470f, 0px 0px 24px 0px #0000000a;
+      background-color: #342e6c;
+      .professional-card-head {
+        padding: 191px 8px 115px;
+        h3 {
+          font-size: $heading-small;
+          color: $white-color;
+          line-height: 108%;
+        }
+        p {
+          max-width: 396px;
+          width: 100%;
+          margin-top: 9px;
+          font-size: $text-medium;
+          color: $white-color;
+          line-height: 160%;
+          opacity: 0.8;
+        }
+      }
+      .professional-pricings {
+        padding: 36px 68px 38px 40px;
+        border-top: 1px solid #ffffff0d;
+        p {
+          color: $white-color;
+          font-size: $heading-small;
+          line-height: 107%;
+          letter-spacing: -0.96px;
+          .currency {
+            font-size: 23px;
+            letter-spacing: normal;
+            vertical-align: middle;
+          }
+          .duration {
+            font-size: 28px;
+            letter-spacing: -0.84px;
+            vertical-align: middle;
+          }
+        }
+        .btn-primary {
+          @include btn();
+          padding: 12.5px 28px;
+        }
+      }
+    }
+  }
+}
 .try-section {
   @include wrapper();
   .try-content {
@@ -400,6 +548,51 @@ h6 {
       }
     }
   }
+  .pricing-section {
+    margin-inline: 110px 115px;
+    .pricing-head {
+      h2 {
+        font-size: 56px;
+      }
+    }
+    .pricing-plans {
+      .standard-card {
+        max-width: 550px;
+        .standard-card-head {
+          padding-bottom: 56px;
+          h3 {
+            font-size: 44px;
+          }
+        }
+          .standard-pricings {
+            .support {
+              padding-bottom: 70px;
+            }
+            .total-pricing {
+              padding-bottom: 51px;
+              p {
+                font-size: 44px;
+              }
+            }
+          }
+        
+      }
+      .professional-card {
+        margin-block: 25px;
+        max-width: 450px;
+        .professional-card-head {
+          h3 {
+            font-size: 44px;
+          }
+        }
+        .professional-pricings {
+          p {
+            font-size: 44px;
+          }
+        }
+      }
+    }
+  }
   .try-section {
     .try-content {
       padding: 180px 290px 230px 290px;
@@ -475,6 +668,47 @@ h6 {
       }
     }
   }
+  .pricing-section {
+    margin-inline: 80px 85px;
+    .pricing-head {
+      h2 {
+        font-size: 48px;
+        margin-top: 62px;
+      }
+    }
+    .pricing-plans {
+      .standard-card {
+        max-width: 485px;
+        .standard-card-head {
+          h3 {
+            font-size: 40px;
+          }
+        }
+        .standard-pricings {
+          .total-pricing {
+            p {
+              font-size: 40px;
+            }
+          }
+        }
+      }
+      .professional-card {
+        margin-block: 47px;
+        max-width: 390px;
+        .professional-card-head {
+          h3 {
+            font-size: 40px;
+          }
+        }
+          .professional-pricings {
+            padding-inline: 35px;
+            p {
+              font-size: 40px;
+            }
+          }
+      }
+    }
+  }
   .try-section {
     .try-content {
       padding: 150px 234px 200px 234px;
@@ -539,6 +773,25 @@ h6 {
       padding-top: 50px;
       .list-group {
         gap: 40px;
+      }
+    }
+  }
+  .pricing-section {
+    margin-inline: auto;
+    .pricing-plans {
+      align-items: center;
+      .standard-card, .professional-card {
+        max-width: 500px;
+      }
+      .standard-card {
+        .pricing-bg-element {
+          left: -68px;
+          bottom: -97px;
+        }
+      }
+      .professional-card {
+        margin-bottom: 0;
+        margin-top: 30px;
       }
     }
   }
@@ -657,6 +910,103 @@ h6 {
             padding-top: 15px;
           }
         }
+      }
+    }
+  }
+  .pricing-section {
+    .pricing-head {
+      h2 {
+        margin-inline: auto;
+        max-width: 352px;
+        font-size: 40px;
+        margin-top: 54px;
+        span {
+          @include custom-underline($button-accent-color, 10px, 6px, 0.2)
+        }
+      }
+      p {
+        max-width: 400px;
+        margin-top: 18px;
+        padding-inline: 25px;
+      }
+    }
+    .pricing-plans {
+      margin-top: 35px;
+      max-width: 400px;
+      padding-inline: 24px;
+      .standard-card, .professional-card {
+        max-width: 100%;
+      }
+      .standard-card {
+        .standard-card-head {
+          padding: 32px 24px 42px;
+          h3 {
+            font-size: 36px;
+          }
+        }
+        .standard-pricings {
+          .additional-fee, .rebalance, .support, .total-pricing {
+            flex-wrap: wrap;
+          }
+          .additional-fee, .rebalance, .support {
+            margin-left: 24px;
+            padding-right: 118px;
+            margin-right: 0;
+          }
+          .support {
+            column-gap: 38px;
+            padding-bottom: 22px;
+          }
+          .total-pricing {
+            padding: 25px 31px 36px 28px;
+            column-gap: 41px;
+            row-gap: 23px;
+            justify-content: center !important;
+            p {
+              font-size: 36px;
+              .currency {
+                font-size: 20px;
+              }
+              .duration {
+                font-size: 24px;
+              }
+            }
+            .btn-primary {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .professional-card {
+        .professional-card-head {
+          padding: 45px 24px 51px;
+          h3 {
+            font-size: 36px;
+          }
+          p {
+            margin-top: 22px             ;
+          }
+        }
+          .professional-pricings {
+            padding: 27px 33px 37px 26px;
+            justify-content: center !important;
+            flex-wrap: wrap;
+            column-gap: 29px;
+            row-gap: 18px;
+            p {
+              font-size: 36px;
+              .currency {
+                font-size: 20px;
+              }
+              .duration {
+                font-size: 24px;
+              }
+            }
+            .btn-primary {
+              width: 100%;
+            }
+          }
+       
       }
     }
   }

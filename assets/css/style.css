@@ -237,6 +237,201 @@ h6 {
   padding-top: 15px;
 }
 
+.pricing-section {
+  margin-inline: 173px 115px;
+}
+.pricing-section .pricing-head {
+  margin-top: 169px;
+}
+.pricing-section .pricing-head hr {
+  max-width: 71px;
+  width: 100%;
+  border: 5px solid #ffc267;
+}
+.pricing-section .pricing-head h2 {
+  margin-top: 82px;
+  font-size: 64px;
+  line-height: 108%;
+}
+.pricing-section .pricing-head h2 span {
+  position: relative;
+  text-decoration: none;
+}
+.pricing-section .pricing-head h2 span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 16px;
+  width: 100%;
+  height: 10px;
+  background-color: rgba(102, 88, 234, 0.2);
+  z-index: -1;
+}
+.pricing-section .pricing-head p {
+  margin-top: 13px;
+  max-width: 558px;
+  width: 100%;
+  font-size: 18px;
+  line-height: 160%;
+}
+.pricing-section .pricing-plans {
+  max-width: 1152px;
+  margin-top: 77px;
+}
+.pricing-section .pricing-plans .standard-card {
+  max-width: 611px;
+  width: 100%;
+  box-shadow: 0px 44px 74px 0px rgba(26, 21, 71, 0.0588235294), 0px 0px 24px 0px rgba(0, 0, 0, 0.0392156863);
+}
+.pricing-section .pricing-plans .standard-card .pricing-bg-element {
+  left: -73px;
+  bottom: -72px;
+}
+.pricing-section .pricing-plans .standard-card .standard-card-head {
+  padding: 56px 40px 77px 46px;
+}
+.pricing-section .pricing-plans .standard-card .standard-card-head h3 {
+  font-size: 48px;
+  line-height: 108%;
+  color: #1b1642;
+}
+.pricing-section .pricing-plans .standard-card .standard-card-head p {
+  font-size: 18px;
+  line-height: 160%;
+  color: #1b1642;
+  margin-top: 6px;
+  max-width: 418px;
+  width: 100%;
+}
+.pricing-section .pricing-plans .standard-card .standard-pricings .additional-fee,
+.pricing-section .pricing-plans .standard-card .standard-pricings .rebalance,
+.pricing-section .pricing-plans .standard-card .standard-pricings .support,
+.pricing-section .pricing-plans .standard-card .standard-pricings .total-pricing {
+  margin-inline: 62px 65px;
+  border-top: 1px solid #eaf2fe;
+}
+.pricing-section .pricing-plans .standard-card .standard-pricings .additional-fee p,
+.pricing-section .pricing-plans .standard-card .standard-pricings .rebalance p,
+.pricing-section .pricing-plans .standard-card .standard-pricings .support p,
+.pricing-section .pricing-plans .standard-card .standard-pricings .total-pricing p {
+  font-size: 18px;
+  line-height: 160%;
+  color: #1b1642;
+}
+.pricing-section .pricing-plans .standard-card .standard-pricings .additional-fee, .pricing-section .pricing-plans .standard-card .standard-pricings .rebalance {
+  padding-block: 20px 24px;
+}
+.pricing-section .pricing-plans .standard-card .standard-pricings .support {
+  padding-block: 20px 75px;
+}
+.pricing-section .pricing-plans .standard-card .standard-pricings .total-pricing {
+  margin-inline: 0;
+  padding: 32px 63px 38px 39px;
+}
+.pricing-section .pricing-plans .standard-card .standard-pricings .total-pricing p {
+  font-size: 48px;
+  line-height: 107%;
+  letter-spacing: -0.96px;
+}
+.pricing-section .pricing-plans .standard-card .standard-pricings .total-pricing p .currency {
+  font-size: 23px;
+  letter-spacing: normal;
+  vertical-align: middle;
+}
+.pricing-section .pricing-plans .standard-card .standard-pricings .total-pricing p .duration {
+  font-size: 28px;
+  letter-spacing: -0.84px;
+  vertical-align: middle;
+}
+.pricing-section .pricing-plans .standard-card .standard-pricings .total-pricing .btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #6658ea;
+  --bs-btn-border-color: #6658ea;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #4632c1;
+  --bs-btn-hover-border-color: #3d2aaa;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #32208e;
+  --bs-btn-active-border-color: #2a1b7e;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #6658ea;
+  --bs-btn-disabled-border-color: #6658ea;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 8px 0;
+  box-shadow: 0px 14px 24px 0px rgba(27, 22, 66, 0.0588235294), 0px 0px 6px 0px rgba(0, 0, 0, 0.031372549);
+  letter-spacing: -0.18px;
+  padding: 12.5px 28px;
+}
+.pricing-section .pricing-plans .professional-card {
+  max-width: 541px;
+  width: 100%;
+  margin-block: 32px;
+  box-shadow: 0px 44px 74px 0px rgba(26, 21, 71, 0.0588235294), 0px 0px 24px 0px rgba(0, 0, 0, 0.0392156863);
+  background-color: #342e6c;
+}
+.pricing-section .pricing-plans .professional-card .professional-card-head {
+  padding: 191px 8px 115px;
+}
+.pricing-section .pricing-plans .professional-card .professional-card-head h3 {
+  font-size: 48px;
+  color: #fff;
+  line-height: 108%;
+}
+.pricing-section .pricing-plans .professional-card .professional-card-head p {
+  max-width: 396px;
+  width: 100%;
+  margin-top: 9px;
+  font-size: 18px;
+  color: #fff;
+  line-height: 160%;
+  opacity: 0.8;
+}
+.pricing-section .pricing-plans .professional-card .professional-pricings {
+  padding: 36px 68px 38px 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.0509803922);
+}
+.pricing-section .pricing-plans .professional-card .professional-pricings p {
+  color: #fff;
+  font-size: 48px;
+  line-height: 107%;
+  letter-spacing: -0.96px;
+}
+.pricing-section .pricing-plans .professional-card .professional-pricings p .currency {
+  font-size: 23px;
+  letter-spacing: normal;
+  vertical-align: middle;
+}
+.pricing-section .pricing-plans .professional-card .professional-pricings p .duration {
+  font-size: 28px;
+  letter-spacing: -0.84px;
+  vertical-align: middle;
+}
+.pricing-section .pricing-plans .professional-card .professional-pricings .btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #6658ea;
+  --bs-btn-border-color: #6658ea;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #4632c1;
+  --bs-btn-hover-border-color: #3d2aaa;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #32208e;
+  --bs-btn-active-border-color: #2a1b7e;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #6658ea;
+  --bs-btn-disabled-border-color: #6658ea;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 8px 0;
+  box-shadow: 0px 14px 24px 0px rgba(27, 22, 66, 0.0588235294), 0px 0px 6px 0px rgba(0, 0, 0, 0.031372549);
+  letter-spacing: -0.18px;
+  padding: 12.5px 28px;
+}
+
 .try-section {
   max-width: 1920px;
   width: 100%;
@@ -380,6 +575,40 @@ h6 {
   .invest-section .revenue-card-section .revenue-card .value {
     font-size: 44px;
   }
+  .pricing-section {
+    margin-inline: 110px 115px;
+  }
+  .pricing-section .pricing-head h2 {
+    font-size: 56px;
+  }
+  .pricing-section .pricing-plans .standard-card {
+    max-width: 550px;
+  }
+  .pricing-section .pricing-plans .standard-card .standard-card-head {
+    padding-bottom: 56px;
+  }
+  .pricing-section .pricing-plans .standard-card .standard-card-head h3 {
+    font-size: 44px;
+  }
+  .pricing-section .pricing-plans .standard-card .standard-pricings .support {
+    padding-bottom: 70px;
+  }
+  .pricing-section .pricing-plans .standard-card .standard-pricings .total-pricing {
+    padding-bottom: 51px;
+  }
+  .pricing-section .pricing-plans .standard-card .standard-pricings .total-pricing p {
+    font-size: 44px;
+  }
+  .pricing-section .pricing-plans .professional-card {
+    margin-block: 25px;
+    max-width: 450px;
+  }
+  .pricing-section .pricing-plans .professional-card .professional-card-head h3 {
+    font-size: 44px;
+  }
+  .pricing-section .pricing-plans .professional-card .professional-pricings p {
+    font-size: 44px;
+  }
   .try-section .try-content {
     padding: 180px 290px 230px 290px;
   }
@@ -442,6 +671,35 @@ h6 {
     padding: 50px 50px 22px 60px;
   }
   .invest-section .invest-content h2 {
+    font-size: 40px;
+  }
+  .pricing-section {
+    margin-inline: 80px 85px;
+  }
+  .pricing-section .pricing-head h2 {
+    font-size: 48px;
+    margin-top: 62px;
+  }
+  .pricing-section .pricing-plans .standard-card {
+    max-width: 485px;
+  }
+  .pricing-section .pricing-plans .standard-card .standard-card-head h3 {
+    font-size: 40px;
+  }
+  .pricing-section .pricing-plans .standard-card .standard-pricings .total-pricing p {
+    font-size: 40px;
+  }
+  .pricing-section .pricing-plans .professional-card {
+    margin-block: 47px;
+    max-width: 390px;
+  }
+  .pricing-section .pricing-plans .professional-card .professional-card-head h3 {
+    font-size: 40px;
+  }
+  .pricing-section .pricing-plans .professional-card .professional-pricings {
+    padding-inline: 35px;
+  }
+  .pricing-section .pricing-plans .professional-card .professional-pricings p {
     font-size: 40px;
   }
   .try-section .try-content {
@@ -514,6 +772,23 @@ h6 {
   }
   .invest-section .invest-content .list-group {
     gap: 40px;
+  }
+  .pricing-section {
+    margin-inline: auto;
+  }
+  .pricing-section .pricing-plans {
+    align-items: center;
+  }
+  .pricing-section .pricing-plans .standard-card, .pricing-section .pricing-plans .professional-card {
+    max-width: 500px;
+  }
+  .pricing-section .pricing-plans .standard-card .pricing-bg-element {
+    left: -68px;
+    bottom: -97px;
+  }
+  .pricing-section .pricing-plans .professional-card {
+    margin-bottom: 0;
+    margin-top: 30px;
   }
   .try-section .try-content {
     padding: 130px 200px 200px 190px;
@@ -608,6 +883,106 @@ h6 {
   }
   .invest-section .invest-content .list-group ul li:nth-child(2) {
     padding-top: 15px;
+  }
+  .pricing-section .pricing-head h2 {
+    margin-inline: auto;
+    max-width: 352px;
+    font-size: 40px;
+    margin-top: 54px;
+  }
+  .pricing-section .pricing-head h2 span {
+    position: relative;
+    text-decoration: none;
+  }
+  .pricing-section .pricing-head h2 span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+    width: 100%;
+    height: 10px;
+    background-color: rgba(102, 88, 234, 0.2);
+    z-index: -1;
+  }
+  .pricing-section .pricing-head p {
+    max-width: 400px;
+    margin-top: 18px;
+    padding-inline: 25px;
+  }
+  .pricing-section .pricing-plans {
+    margin-top: 35px;
+    max-width: 400px;
+    padding-inline: 24px;
+  }
+  .pricing-section .pricing-plans .standard-card, .pricing-section .pricing-plans .professional-card {
+    max-width: 100%;
+  }
+  .pricing-section .pricing-plans .standard-card .standard-card-head {
+    padding: 32px 24px 42px;
+  }
+  .pricing-section .pricing-plans .standard-card .standard-card-head h3 {
+    font-size: 36px;
+  }
+  .pricing-section .pricing-plans .standard-card .standard-pricings .additional-fee, .pricing-section .pricing-plans .standard-card .standard-pricings .rebalance, .pricing-section .pricing-plans .standard-card .standard-pricings .support, .pricing-section .pricing-plans .standard-card .standard-pricings .total-pricing {
+    flex-wrap: wrap;
+  }
+  .pricing-section .pricing-plans .standard-card .standard-pricings .additional-fee, .pricing-section .pricing-plans .standard-card .standard-pricings .rebalance, .pricing-section .pricing-plans .standard-card .standard-pricings .support {
+    margin-left: 24px;
+    padding-right: 118px;
+    margin-right: 0;
+  }
+  .pricing-section .pricing-plans .standard-card .standard-pricings .support {
+    -moz-column-gap: 38px;
+         column-gap: 38px;
+    padding-bottom: 22px;
+  }
+  .pricing-section .pricing-plans .standard-card .standard-pricings .total-pricing {
+    padding: 25px 31px 36px 28px;
+    -moz-column-gap: 41px;
+         column-gap: 41px;
+    row-gap: 23px;
+    justify-content: center !important;
+  }
+  .pricing-section .pricing-plans .standard-card .standard-pricings .total-pricing p {
+    font-size: 36px;
+  }
+  .pricing-section .pricing-plans .standard-card .standard-pricings .total-pricing p .currency {
+    font-size: 20px;
+  }
+  .pricing-section .pricing-plans .standard-card .standard-pricings .total-pricing p .duration {
+    font-size: 24px;
+  }
+  .pricing-section .pricing-plans .standard-card .standard-pricings .total-pricing .btn-primary {
+    width: 100%;
+  }
+  .pricing-section .pricing-plans .professional-card .professional-card-head {
+    padding: 45px 24px 51px;
+  }
+  .pricing-section .pricing-plans .professional-card .professional-card-head h3 {
+    font-size: 36px;
+  }
+  .pricing-section .pricing-plans .professional-card .professional-card-head p {
+    margin-top: 22px;
+  }
+  .pricing-section .pricing-plans .professional-card .professional-pricings {
+    padding: 27px 33px 37px 26px;
+    justify-content: center !important;
+    flex-wrap: wrap;
+    -moz-column-gap: 29px;
+         column-gap: 29px;
+    row-gap: 18px;
+  }
+  .pricing-section .pricing-plans .professional-card .professional-pricings p {
+    font-size: 36px;
+  }
+  .pricing-section .pricing-plans .professional-card .professional-pricings p .currency {
+    font-size: 20px;
+  }
+  .pricing-section .pricing-plans .professional-card .professional-pricings p .duration {
+    font-size: 24px;
+  }
+  .pricing-section .pricing-plans .professional-card .professional-pricings .btn-primary {
+    width: 100%;
   }
   .try-section .try-content {
     padding: 100px 22px 322px 24px;
