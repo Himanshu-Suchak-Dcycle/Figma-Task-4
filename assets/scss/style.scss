@@ -267,6 +267,52 @@ h6 {
     }
   }
 }
+.check-investment-section {
+  @include wrapper();
+  margin-top: 145px;
+  margin-inline: auto;
+  .check-content {
+    padding: 104px 170px 217px 244px;
+    h2 {
+      max-width: 504px;
+      font-size: $heading-small;
+      color: $primary-color;
+      line-height: 108%;
+    }
+    p {
+      max-width: 504px;
+      font-size: $text-medium;
+      color: $primary-color;
+      line-height: 160%;
+      margin-top: 18px;
+    }
+    .download-buttons {
+      margin-top: 33px;
+      gap: 16px;
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+  .check-background {
+    max-width: 351px;
+    width: 100%;
+    border-radius: 10px;
+    margin-left: 141px;
+    .circle-top-element {
+      top: -44px;
+      right: -67px;
+    }
+    .circle-bottom-element {
+      left: -80px;
+      bottom: 92px;
+    }
+    .bg-img {
+      border-radius: 10px;
+      box-shadow: 0px 44px 74px 0px #1a15470f, 0px 0px 24px 0px #0000000a;
+    }
+  }
+}
 .pricing-section {
   margin-inline: 173px 115px;
   .pricing-head {
@@ -334,7 +380,8 @@ h6 {
             color: $primary-color;
           }
         }
-        .additional-fee, .rebalance {
+        .additional-fee,
+        .rebalance {
           padding-block: 20px 24px;
         }
         .support {
@@ -548,6 +595,22 @@ h6 {
       }
     }
   }
+  .check-investment-section {
+    .check-background {
+      margin-left: 80px;
+    }
+    .check-content {
+      padding: 104px 110px 190px 164px;
+      h2 {
+        font-size: 44px;
+        max-width: 496px;
+        width: 100%;
+      }
+      p {
+        max-width: 496px;
+      }
+    }
+  }
   .pricing-section {
     margin-inline: 110px 115px;
     .pricing-head {
@@ -564,18 +627,17 @@ h6 {
             font-size: 44px;
           }
         }
-          .standard-pricings {
-            .support {
-              padding-bottom: 70px;
-            }
-            .total-pricing {
-              padding-bottom: 51px;
-              p {
-                font-size: 44px;
-              }
+        .standard-pricings {
+          .support {
+            padding-bottom: 70px;
+          }
+          .total-pricing {
+            padding-bottom: 51px;
+            p {
+              font-size: 44px;
             }
           }
-        
+        }
       }
       .professional-card {
         margin-block: 25px;
@@ -668,6 +730,22 @@ h6 {
       }
     }
   }
+  .check-investment-section {
+    margin-top: 130px;
+    .check-background {
+      max-width: 280px;
+    }
+    .check-content {
+      padding: 104px 80px 73px 120px;
+      h2,
+      p {
+        max-width: 443px;
+      }
+      h2 {
+        font-size: 40px;
+      }
+    }
+  }
   .pricing-section {
     margin-inline: 80px 85px;
     .pricing-head {
@@ -700,12 +778,12 @@ h6 {
             font-size: 40px;
           }
         }
-          .professional-pricings {
-            padding-inline: 35px;
-            p {
-              font-size: 40px;
-            }
+        .professional-pricings {
+          padding-inline: 35px;
+          p {
+            font-size: 40px;
           }
+        }
       }
     }
   }
@@ -776,11 +854,29 @@ h6 {
       }
     }
   }
+  .check-investment-section {
+    .check-background {
+      max-width: 352px;
+      margin-inline: auto;
+    }
+    .check-content {
+      padding-inline: 0;
+      margin-inline: auto;
+      padding-block: 152px 0;
+      .download-buttons {
+        margin-top: 25px;
+        .img-fluid {
+          max-width: 150px;
+        }
+      }
+    }
+  }
   .pricing-section {
     margin-inline: auto;
     .pricing-plans {
       align-items: center;
-      .standard-card, .professional-card {
+      .standard-card,
+      .professional-card {
         max-width: 500px;
       }
       .standard-card {
@@ -913,6 +1009,41 @@ h6 {
       }
     }
   }
+  .check-investment-section {
+    .check-background {
+      max-width: 400px;
+      padding-inline: 24px;
+      overflow-x: clip;
+      .circle-top-element {
+        top: -45px;
+        right: -55px;
+      }
+      .circle-bottom-element {
+        left: -59px;
+        bottom: -54px;
+      }
+    }
+    .check-content {
+      max-width: 400px;
+      padding-inline: 24px;
+      h2 {
+        font-size: 36px;
+      }
+      p {
+        margin-top: 19px;
+      }
+      .download-buttons {
+        margin-top: 34px;
+        flex-wrap: wrap;
+        .img-fluid {
+          max-width: 143.3px;
+        }
+        .img-fluid:nth-child(2) {
+          max-width: 162.4px;
+        }
+      }
+    }
+  }
   .pricing-section {
     .pricing-head {
       h2 {
@@ -921,7 +1052,7 @@ h6 {
         font-size: 40px;
         margin-top: 54px;
         span {
-          @include custom-underline($button-accent-color, 10px, 6px, 0.2)
+          @include custom-underline($button-accent-color, 10px, 6px, 0.2);
         }
       }
       p {
@@ -934,7 +1065,8 @@ h6 {
       margin-top: 35px;
       max-width: 400px;
       padding-inline: 24px;
-      .standard-card, .professional-card {
+      .standard-card,
+      .professional-card {
         max-width: 100%;
       }
       .standard-card {
@@ -945,10 +1077,15 @@ h6 {
           }
         }
         .standard-pricings {
-          .additional-fee, .rebalance, .support, .total-pricing {
+          .additional-fee,
+          .rebalance,
+          .support,
+          .total-pricing {
             flex-wrap: wrap;
           }
-          .additional-fee, .rebalance, .support {
+          .additional-fee,
+          .rebalance,
+          .support {
             margin-left: 24px;
             padding-right: 118px;
             margin-right: 0;
@@ -984,29 +1121,28 @@ h6 {
             font-size: 36px;
           }
           p {
-            margin-top: 22px             ;
+            margin-top: 22px;
           }
         }
-          .professional-pricings {
-            padding: 27px 33px 37px 26px;
-            justify-content: center !important;
-            flex-wrap: wrap;
-            column-gap: 29px;
-            row-gap: 18px;
-            p {
-              font-size: 36px;
-              .currency {
-                font-size: 20px;
-              }
-              .duration {
-                font-size: 24px;
-              }
+        .professional-pricings {
+          padding: 27px 33px 37px 26px;
+          justify-content: center !important;
+          flex-wrap: wrap;
+          column-gap: 29px;
+          row-gap: 18px;
+          p {
+            font-size: 36px;
+            .currency {
+              font-size: 20px;
             }
-            .btn-primary {
-              width: 100%;
+            .duration {
+              font-size: 24px;
             }
           }
-       
+          .btn-primary {
+            width: 100%;
+          }
+        }
       }
     }
   }
