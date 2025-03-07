@@ -59,6 +59,7 @@ $text-small: 14px;
     width: 100%;
     height: $thickness;
     background-color: rgba($color, $opacity);
+    z-index: -1;
   }
 }
 
@@ -180,6 +181,89 @@ h6 {
     }
   }
 }
+.invest-section {
+  @include wrapper();
+  padding-top: 229px;
+  margin-top: -330px;
+  .revenue-card-section {
+    margin-left: 160px;
+    .revenue-card {
+      max-width: 448px;
+      width: 100%;
+      border-top: 3px solid #7085f5;
+      background-color: $white-color;
+      box-shadow: 0px 44px 74px 0px #1a15470f, 0px 0px 24px 0px #0000000a;
+      .value {
+        color: $primary-color;
+        font-size: $heading-small;
+        letter-spacing: -0.48px;
+        line-height: 51.36px;
+      }
+      .sub-head {
+        font-size: $text-medium;
+        color: $text-color;
+        line-height: 28.8px;
+      }
+      .annual-revenue,
+      .losses {
+        border-bottom: 1px solid #eaf2fe;
+        margin-inline: 44px 42px;
+        .sub-head {
+          padding-bottom: 23px;
+        }
+      }
+      .annual-revenue {
+        padding-top: 50px;
+      }
+      .losses {
+        padding-top: 32px;
+      }
+      .losses-using-goodkit {
+        padding: 27px 60px 50px 44px;
+        .value {
+          color: #2cd4a2;
+        }
+      }
+    }
+    .plus-bg-element {
+      top: -47px;
+      left: -51px;
+    }
+  }
+  .invest-content {
+    padding: 73px 140px 35px 220px;
+    h2 {
+      max-width: 430px;
+      width: 100%;
+      font-size: $heading-small;
+      line-height: 51.84px;
+      span {
+        @include custom-underline($highlight-color, 11px, 11px, 0.4);
+      }
+    }
+    p {
+      max-width: 434px;
+      width: 100%;
+      color: $text-color;
+      line-height: 28.8px;
+      font-size: $text-medium;
+      margin-top: 18px;
+    }
+    .list-group {
+      gap: 50px;
+      margin-top: 32px;
+      ul {
+        padding-left: 22px;
+        list-style-image: url("/assets/images/icons/list-style.svg");
+      }
+      li {
+        font-size: $text-medium;
+        color: $text-color;
+        padding-left: 15px;
+      }
+    }
+  }
+}
 .try-section {
   @include wrapper();
   .try-content {
@@ -292,6 +376,27 @@ h6 {
       }
     }
   }
+  .invest-section {
+    margin-top: -300px;
+    .invest-content {
+      padding: 55px 65px 35px 134px;
+      h2 {
+        font-size: 44px;
+        max-width: 422px;
+      }
+      .list-group {
+        gap: 45px;
+      }
+    }
+    .revenue-card-section {
+      margin-left: 120px;
+      .revenue-card {
+        .value {
+          font-size: 44px;
+        }
+      }
+    }
+  }
   .try-section {
     .try-content {
       padding: 180px 290px 230px 290px;
@@ -336,6 +441,37 @@ h6 {
       }
     }
   }
+  .invest-section {
+    .revenue-card-section {
+      margin-left: 100px;
+      .revenue-card {
+        max-width: 400px;
+        width: 100%;
+        .value {
+          font-size: 40px;
+        }
+        .annual-revenue {
+          padding-top: 40px;
+        }
+        .annual-revenue,
+        .losses {
+          margin-inline: 40px 38px;
+          .sub-head {
+            padding-bottom: 18px;
+          }
+        }
+        .losses-using-goodkit {
+          padding: 27px 60px 40px 40px;
+        }
+      }
+    }
+    .invest-content {
+      padding: 50px 50px 22px 60px;
+      h2 {
+        font-size: 40px;
+      }
+    }
+  }
   .try-section {
     .try-content {
       padding: 150px 234px 200px 234px;
@@ -362,7 +498,7 @@ h6 {
   .hero-full-width-background {
     clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
     .hero-section {
-      padding: 0 0 200px;
+      padding: 0 0 300px;
       .hero-content {
         margin-inline: auto;
         padding: 50px 0 0;
@@ -375,6 +511,31 @@ h6 {
         p {
           text-align: center;
         }
+      }
+    }
+  }
+  .invest-section {
+    margin-top: -250px;
+    padding-top: 100px;
+    align-items: center;
+    .revenue-card-section {
+      margin-left: 0;
+      margin-inline: auto;
+      .revenue-card {
+        .plus-bg-element {
+          left: 0;
+          transform: translateX(22%);
+        }
+      }
+    }
+    .invest-content {
+      padding: 0;
+      margin-inline: auto;
+      max-width: 350px;
+      width: 100%;
+      padding-top: 50px;
+      .list-group {
+        gap: 40px;
       }
     }
   }
@@ -431,6 +592,7 @@ h6 {
 @media screen and (max-width: 568px) {
   .hero-full-width-background {
     .hero-section {
+      padding: 0 0 250px;
       .hero-content {
         h1 {
           font-size: 40px;
@@ -444,6 +606,46 @@ h6 {
           padding-inline: 14px;
           flex-wrap: wrap;
         }
+      }
+    }
+  }
+  .invest-section {
+    margin-top: -175px;
+    .revenue-card-section {
+      padding-inline: 24px;
+      .revenue-card {
+        max-width: 351px;
+        width: 100%;
+        .value {
+          font-size: 36px;
+        }
+        .annual-revenue, .losses {
+          .sub-head {
+            padding-bottom: 17px;
+          }
+        }
+        .annual-revenue {
+          padding-top: 38px;
+        }
+        .losses-using-goodkit {
+          padding-bottom: 38px;
+        }
+        .plus-bg-element {
+          top: -52px;
+          transform: translateX(13%);
+        }
+      }
+    }
+    .invest-content {
+      padding-inline: 29px 24px;
+      max-width: 346px;
+      h2 {
+        font-size: 36px;
+      }
+      .list-group {
+        gap: 38px;
+        flex-wrap: wrap;
+        row-gap: 15px;
       }
     }
   }

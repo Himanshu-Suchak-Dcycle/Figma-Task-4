@@ -136,6 +136,104 @@ h6 {
   max-width: 975px;
 }
 
+.invest-section {
+  max-width: 1920px;
+  width: 100%;
+  margin-inline: auto;
+  padding-top: 229px;
+  margin-top: -330px;
+}
+.invest-section .revenue-card-section {
+  margin-left: 160px;
+}
+.invest-section .revenue-card-section .revenue-card {
+  max-width: 448px;
+  width: 100%;
+  border-top: 3px solid #7085f5;
+  background-color: #fff;
+  box-shadow: 0px 44px 74px 0px rgba(26, 21, 71, 0.0588235294), 0px 0px 24px 0px rgba(0, 0, 0, 0.0392156863);
+}
+.invest-section .revenue-card-section .revenue-card .value {
+  color: #1b1642;
+  font-size: 48px;
+  letter-spacing: -0.48px;
+  line-height: 51.36px;
+}
+.invest-section .revenue-card-section .revenue-card .sub-head {
+  font-size: 18px;
+  color: #575a7b;
+  line-height: 28.8px;
+}
+.invest-section .revenue-card-section .revenue-card .annual-revenue,
+.invest-section .revenue-card-section .revenue-card .losses {
+  border-bottom: 1px solid #eaf2fe;
+  margin-inline: 44px 42px;
+}
+.invest-section .revenue-card-section .revenue-card .annual-revenue .sub-head,
+.invest-section .revenue-card-section .revenue-card .losses .sub-head {
+  padding-bottom: 23px;
+}
+.invest-section .revenue-card-section .revenue-card .annual-revenue {
+  padding-top: 50px;
+}
+.invest-section .revenue-card-section .revenue-card .losses {
+  padding-top: 32px;
+}
+.invest-section .revenue-card-section .revenue-card .losses-using-goodkit {
+  padding: 27px 60px 50px 44px;
+}
+.invest-section .revenue-card-section .revenue-card .losses-using-goodkit .value {
+  color: #2cd4a2;
+}
+.invest-section .revenue-card-section .plus-bg-element {
+  top: -47px;
+  left: -51px;
+}
+.invest-section .invest-content {
+  padding: 73px 140px 35px 220px;
+}
+.invest-section .invest-content h2 {
+  max-width: 430px;
+  width: 100%;
+  font-size: 48px;
+  line-height: 51.84px;
+}
+.invest-section .invest-content h2 span {
+  position: relative;
+  text-decoration: none;
+}
+.invest-section .invest-content h2 span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 11px;
+  width: 100%;
+  height: 11px;
+  background-color: rgba(255, 194, 103, 0.4);
+  z-index: -1;
+}
+.invest-section .invest-content p {
+  max-width: 434px;
+  width: 100%;
+  color: #575a7b;
+  line-height: 28.8px;
+  font-size: 18px;
+  margin-top: 18px;
+}
+.invest-section .invest-content .list-group {
+  gap: 50px;
+  margin-top: 32px;
+}
+.invest-section .invest-content .list-group ul {
+  padding-left: 22px;
+  list-style-image: url("/assets/images/icons/list-style.svg");
+}
+.invest-section .invest-content .list-group li {
+  font-size: 18px;
+  color: #575a7b;
+  padding-left: 15px;
+}
+
 .try-section {
   max-width: 1920px;
   width: 100%;
@@ -260,6 +358,25 @@ h6 {
   .hero-full-width-background .hero-section .hero-background {
     max-width: 830px;
   }
+  .invest-section {
+    margin-top: -300px;
+  }
+  .invest-section .invest-content {
+    padding: 55px 65px 35px 134px;
+  }
+  .invest-section .invest-content h2 {
+    font-size: 44px;
+    max-width: 422px;
+  }
+  .invest-section .invest-content .list-group {
+    gap: 45px;
+  }
+  .invest-section .revenue-card-section {
+    margin-left: 120px;
+  }
+  .invest-section .revenue-card-section .revenue-card .value {
+    font-size: 44px;
+  }
   .try-section .try-content {
     padding: 180px 290px 230px 290px;
   }
@@ -296,6 +413,36 @@ h6 {
   .hero-full-width-background .hero-section .hero-background {
     max-width: 720px;
   }
+  .invest-section .revenue-card-section {
+    margin-left: 100px;
+  }
+  .invest-section .revenue-card-section .revenue-card {
+    max-width: 400px;
+    width: 100%;
+  }
+  .invest-section .revenue-card-section .revenue-card .value {
+    font-size: 40px;
+  }
+  .invest-section .revenue-card-section .revenue-card .annual-revenue {
+    padding-top: 40px;
+  }
+  .invest-section .revenue-card-section .revenue-card .annual-revenue,
+  .invest-section .revenue-card-section .revenue-card .losses {
+    margin-inline: 40px 38px;
+  }
+  .invest-section .revenue-card-section .revenue-card .annual-revenue .sub-head,
+  .invest-section .revenue-card-section .revenue-card .losses .sub-head {
+    padding-bottom: 18px;
+  }
+  .invest-section .revenue-card-section .revenue-card .losses-using-goodkit {
+    padding: 27px 60px 40px 40px;
+  }
+  .invest-section .invest-content {
+    padding: 50px 50px 22px 60px;
+  }
+  .invest-section .invest-content h2 {
+    font-size: 40px;
+  }
   .try-section .try-content {
     padding: 150px 234px 200px 234px;
   }
@@ -318,7 +465,7 @@ h6 {
             clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
   }
   .hero-full-width-background .hero-section {
-    padding: 0 0 200px;
+    padding: 0 0 300px;
   }
   .hero-full-width-background .hero-section .hero-content {
     margin-inline: auto;
@@ -339,9 +486,33 @@ h6 {
     width: 100%;
     height: 7px;
     background-color: rgba(102, 88, 234, 0.2);
+    z-index: -1;
   }
   .hero-full-width-background .hero-section .hero-content p {
     text-align: center;
+  }
+  .invest-section {
+    margin-top: -250px;
+    padding-top: 100px;
+    align-items: center;
+  }
+  .invest-section .revenue-card-section {
+    margin-left: 0;
+    margin-inline: auto;
+  }
+  .invest-section .revenue-card-section .revenue-card .plus-bg-element {
+    left: 0;
+    transform: translateX(22%);
+  }
+  .invest-section .invest-content {
+    padding: 0;
+    margin-inline: auto;
+    max-width: 350px;
+    width: 100%;
+    padding-top: 50px;
+  }
+  .invest-section .invest-content .list-group {
+    gap: 40px;
   }
   .try-section .try-content {
     padding: 130px 200px 200px 190px;
@@ -380,6 +551,9 @@ h6 {
   }
 }
 @media screen and (max-width: 568px) {
+  .hero-full-width-background .hero-section {
+    padding: 0 0 250px;
+  }
   .hero-full-width-background .hero-section .hero-content h1 {
     font-size: 40px;
     padding-inline: 16px;
@@ -391,6 +565,44 @@ h6 {
   .hero-full-width-background .hero-section .hero-content .btn-container {
     padding-inline: 14px;
     flex-wrap: wrap;
+  }
+  .invest-section {
+    margin-top: -175px;
+  }
+  .invest-section .revenue-card-section {
+    padding-inline: 24px;
+  }
+  .invest-section .revenue-card-section .revenue-card {
+    max-width: 351px;
+    width: 100%;
+  }
+  .invest-section .revenue-card-section .revenue-card .value {
+    font-size: 36px;
+  }
+  .invest-section .revenue-card-section .revenue-card .annual-revenue .sub-head, .invest-section .revenue-card-section .revenue-card .losses .sub-head {
+    padding-bottom: 17px;
+  }
+  .invest-section .revenue-card-section .revenue-card .annual-revenue {
+    padding-top: 38px;
+  }
+  .invest-section .revenue-card-section .revenue-card .losses-using-goodkit {
+    padding-bottom: 38px;
+  }
+  .invest-section .revenue-card-section .revenue-card .plus-bg-element {
+    top: -52px;
+    transform: translateX(13%);
+  }
+  .invest-section .invest-content {
+    padding-inline: 29px 24px;
+    max-width: 346px;
+  }
+  .invest-section .invest-content h2 {
+    font-size: 36px;
+  }
+  .invest-section .invest-content .list-group {
+    gap: 38px;
+    flex-wrap: wrap;
+    row-gap: 15px;
   }
   .try-section .try-content {
     padding: 100px 22px 322px 24px;
