@@ -302,6 +302,76 @@ h6 {
     width: 100%;
   }
 }
+.feedback-slider-section {
+  margin-top: 28px;
+  @include wrapper();
+  hr {
+    max-width: 78px;
+    width: 100%;
+    border: 2px solid $highlight-color;
+    border-radius: 2px;
+    opacity: 1;
+  }
+  .carousel {
+    margin-top: 97px;
+    .carousel-control-next,
+    .carousel-control-prev {
+      max-width: 60px;
+      width: 100%;
+      height: 60px;
+      top: 106px;
+      background-color: #6658ea;
+      box-shadow: 0px 14px 24px 0px #1b16420f, 0px 0px 6px 0px #00000008;
+      opacity: 1;
+    }
+    .carousel-control-prev {
+      img {
+        transform: rotate(-180deg);
+      }
+    }
+    .carousel-inner {
+      .carousel-item {
+        .slider-content {
+          .slider-heading {
+            max-width: 760px;
+            width: 100%;
+            p {
+              font-size: $text-small;
+              color: $highlight-color;
+              line-height: 160%;
+              letter-spacing: 2.52px;
+            }
+            h2 {
+              margin-top: 27px;
+              font-size: $heading-medium;
+              span {
+                @include custom-underline($highlight-color, 10px, 18px, 0.4);
+              }
+            }
+          }
+          .slider-profile {
+            margin-top: 58px;
+            .profile-picture {
+              max-width: 60px;
+              width: 100%;
+            }
+            .profile-head {
+              font-size: $text-medium;
+              color: $primary-color;
+              line-height: 160%;
+              margin-top: 12px;
+            }
+            .profile-subhead {
+              color: $primary-color;
+              opacity: 0.7;
+              line-height: 160%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 .check-investment-section {
   @include wrapper();
   margin-top: 145px;
@@ -356,6 +426,7 @@ h6 {
       max-width: 71px;
       width: 100%;
       border: 5px solid $highlight-color;
+      opacity: 1;
     }
     h2 {
       margin-top: 82px;
@@ -657,6 +728,29 @@ h6 {
       }
     }
   }
+  .feedback-slider-section {
+    .carousel {
+      margin-top: 80px;
+      .carousel-control-next,
+      .carousel-control-prev {
+        max-width: 55px;
+        height: 55px;
+      }
+      .carousel-inner {
+        .carousel-item {
+          .slider-content {
+            .slider-heading {
+              h2 {
+                font-size: 56px;
+                max-width: 677px;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   .pricing-section {
     margin-inline: 110px 115px;
     .pricing-head {
@@ -804,6 +898,30 @@ h6 {
       }
     }
   }
+  .feedback-slider-section {
+    .carousel {
+      .carousel-control-next,
+      .carousel-control-prev {
+        max-width: 50px;
+        height: 50px;
+      }
+      .carousel-inner {
+        .carousel-item {
+          .slider-content {
+            .slider-heading {
+              h2 {
+                font-size: 48px;
+                max-width: 580px;
+                span {
+                  @include custom-underline($highlight-color, 10px, 13px, 0.4);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   .pricing-section {
     margin-inline: 80px 85px;
     .pricing-head {
@@ -919,6 +1037,27 @@ h6 {
       margin-top: 16.05px;
     }
   }
+  .feedback-slider-section {
+    .carousel {
+      .carousel-control-next,
+      .carousel-control-prev {
+        max-width: 45px;
+        height: 45px;
+      }
+      .carousel-inner {
+        .carousel-item {
+          .slider-content {
+            .slider-heading {
+              h2 {
+                font-size: 44px;
+                max-width: 532px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   .check-investment-section {
     .check-background {
       max-width: 352px;
@@ -983,6 +1122,26 @@ h6 {
   }
 }
 @media screen and (max-width: 768px) {
+  .feedback-slider-section {
+    margin-top: 112px;
+    .carousel {
+      margin-top: 53px;
+      .carousel-inner {
+        .carousel-item {
+          .slider-content {
+            .slider-heading {
+              h2 {
+                max-width: 416px;
+              }
+            }
+            .slider-profile {
+              margin-top: 53px;
+            }
+          }
+        }
+      }
+    }
+  }
   .try-section {
     .try-content {
       padding: 100px 105px 200px 105px;
@@ -1084,6 +1243,27 @@ h6 {
       .sub-head1,
       .sub-head {
         font-size: 18px;
+      }
+    }
+  }
+  .feedback-slider-section {
+    .carousel {
+      .carousel-control-next,
+      .carousel-control-prev {
+        display: none;
+      }
+      .carousel-inner {
+        .carousel-item {
+          .slider-content {
+            .slider-heading {
+              h2 {
+                max-width: 400px;
+                padding-inline: 24px;
+                margin-top: 29px;
+              }
+            }
+          }
+        }
       }
     }
   }
