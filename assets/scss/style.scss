@@ -418,7 +418,85 @@ h6 {
     }
   }
 }
+.stories-full-width-background {
+  background-color: $primary-color;
+  width: 100%;
+  min-height: 100vh;
+  clip-path: polygon(0 0, 100% 10%, 100% 93%, 0% 100%);
+  margin-top: -165px;
+  padding-bottom: 900px;
+  .bg-element {
+    width: 100%;
+    pointer-events: none;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%
+    }
+  }
+  .stories-section {
+    @include wrapper();
+    overflow: hidden;
+    padding-top: 312px;
+    padding-left: 140px;
+    .stories-content {
+      padding-right: 146px;
+      h2 {
+        color: $white-color;
+        font-size: $heading-small;
+        line-height: 108%;
+        max-width: 455px;
+        width: 100%;
+      }
+      p {
+        color: $white-color;
+        font-size: $text-medium;
+        line-height: 160%;
+        max-width: 558px;
+        width: 100%;
+      }
+    }
+    .stories-card {
+      column-gap: 20px;
+      margin-top: 58px;
+      .card {
+        border: none;
+        max-width: 270px;
+        width: 100%;
+        box-shadow: 0px 44px 54px 0px #291e0c08;
+        border-radius: 24px 0 24px 0;
+        flex: 0 0 21%;
+        .img-placeholder {
+          height: 216px;
+          width: 100%;
+          object-fit: cover;
+          img {
+            clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
+            height: 100%;
+            border-radius: 24px 0 0 0;
+          }
+        }
+        .card-body {
+          padding: 32px 23px 29px 27px;
+          .company-logo-container {
+            height: 30px;
+          }
+          .card-text {
+            margin-top: 15px;
+            color: $primary-color;
+            &:nth-child(1) {
+              margin-top: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 .pricing-section {
+  position: relative;
+  margin-top: -900px;
+  z-index: 2;
   margin-inline: 173px 115px;
   .pricing-head {
     margin-top: 169px;
@@ -431,7 +509,7 @@ h6 {
     h2 {
       margin-top: 82px;
       font-size: $heading-medium;
-      // color: $white-color;
+      color: $white-color;
       line-height: 108%;
       span {
         @include custom-underline($button-accent-color, 10px, 16px, 0.2);
@@ -443,7 +521,7 @@ h6 {
       width: 100%;
       font-size: $text-medium;
       line-height: 160%;
-      // color: $white-color;
+      color: $white-color;
     }
   }
   .pricing-plans {
@@ -751,6 +829,17 @@ h6 {
       }
     }
   }
+  .stories-full-width-background {
+    .stories-section {
+      padding-left: 110px;
+      .stories-content {
+        padding-right: 30px;
+        h2 {
+          font-size: 44px;
+        }
+      }
+    }
+  }
   .pricing-section {
     margin-inline: 110px 115px;
     .pricing-head {
@@ -922,6 +1011,17 @@ h6 {
       }
     }
   }
+  .stories-full-width-background {
+    .stories-section {
+      padding-left: 70px;
+      .stories-content {
+        h2 {
+          font-size: 40px;
+          max-width: 440px;
+        }
+      }
+    }
+  }
   .pricing-section {
     margin-inline: 80px 85px;
     .pricing-head {
@@ -1072,6 +1172,35 @@ h6 {
         .img-fluid {
           max-width: 150px;
         }
+      }
+    }
+  }
+  .stories-full-width-background {
+    clip-path: polygon(0 0, 100% 3%, 100% 97%, 0% 100%);
+    margin-top: 126px;
+    .bg-mobile-element {
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      img {
+        width: 100%;
+        height: 2700px;
+      }
+    }
+    .stories-section {
+      padding-top: 200px;
+      padding-left: 0;
+      .stories-content {
+        max-width: 443px;
+        width: 100%;
+        margin-inline: auto;
+        padding-right: 0;
+        p {
+          margin-top: 15px;
+        }
+      }
+      .stories-card {
+        padding-left: 70px;
       }
     }
   }
@@ -1302,8 +1431,27 @@ h6 {
       }
     }
   }
+  .stories-full-width-background {
+    padding-bottom: 1401px;
+    .stories-section {
+      .stories-content {
+        max-width: 400px;
+        width: 100%;
+        padding-inline: 24px;
+        h2 {
+          font-size: 36px;
+        }
+      }
+      .stories-card {
+        padding-left: 25px;
+        margin-top: 37px;
+      }
+    }
+  }
   .pricing-section {
+    margin-top: -1401px;
     .pricing-head {
+      margin-top: 70px;
       h2 {
         margin-inline: auto;
         max-width: 352px;

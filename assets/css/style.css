@@ -400,7 +400,92 @@ h6 {
   box-shadow: 0px 44px 74px 0px rgba(26, 21, 71, 0.0588235294), 0px 0px 24px 0px rgba(0, 0, 0, 0.0392156863);
 }
 
+.stories-full-width-background {
+  background-color: #1b1642;
+  width: 100%;
+  min-height: 100vh;
+  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 93%, 0% 100%);
+          clip-path: polygon(0 0, 100% 10%, 100% 93%, 0% 100%);
+  margin-top: -165px;
+  padding-bottom: 900px;
+}
+.stories-full-width-background .bg-element {
+  width: 100%;
+  pointer-events: none;
+  height: 100%;
+}
+.stories-full-width-background .bg-element img {
+  width: 100%;
+  height: 100%;
+}
+.stories-full-width-background .stories-section {
+  max-width: 1920px;
+  width: 100%;
+  margin-inline: auto;
+  overflow: hidden;
+  padding-top: 312px;
+  padding-left: 140px;
+}
+.stories-full-width-background .stories-section .stories-content {
+  padding-right: 146px;
+}
+.stories-full-width-background .stories-section .stories-content h2 {
+  color: #fff;
+  font-size: 48px;
+  line-height: 108%;
+  max-width: 455px;
+  width: 100%;
+}
+.stories-full-width-background .stories-section .stories-content p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 160%;
+  max-width: 558px;
+  width: 100%;
+}
+.stories-full-width-background .stories-section .stories-card {
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  margin-top: 58px;
+}
+.stories-full-width-background .stories-section .stories-card .card {
+  border: none;
+  max-width: 270px;
+  width: 100%;
+  box-shadow: 0px 44px 54px 0px rgba(41, 30, 12, 0.031372549);
+  border-radius: 24px 0 24px 0;
+  flex: 0 0 21%;
+}
+.stories-full-width-background .stories-section .stories-card .card .img-placeholder {
+  height: 216px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.stories-full-width-background .stories-section .stories-card .card .img-placeholder img {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
+  height: 100%;
+  border-radius: 24px 0 0 0;
+}
+.stories-full-width-background .stories-section .stories-card .card .card-body {
+  padding: 32px 23px 29px 27px;
+}
+.stories-full-width-background .stories-section .stories-card .card .card-body .company-logo-container {
+  height: 30px;
+}
+.stories-full-width-background .stories-section .stories-card .card .card-body .card-text {
+  margin-top: 15px;
+  color: #1b1642;
+}
+.stories-full-width-background .stories-section .stories-card .card .card-body .card-text:nth-child(1) {
+  margin-top: 13px;
+}
+
 .pricing-section {
+  position: relative;
+  margin-top: -900px;
+  z-index: 2;
   margin-inline: 173px 115px;
 }
 .pricing-section .pricing-head {
@@ -415,6 +500,7 @@ h6 {
 .pricing-section .pricing-head h2 {
   margin-top: 82px;
   font-size: 64px;
+  color: #fff;
   line-height: 108%;
 }
 .pricing-section .pricing-head h2 span {
@@ -437,6 +523,7 @@ h6 {
   width: 100%;
   font-size: 18px;
   line-height: 160%;
+  color: #fff;
 }
 .pricing-section .pricing-plans {
   max-width: 1152px;
@@ -776,6 +863,15 @@ h6 {
     max-width: 677px;
     width: 100%;
   }
+  .stories-full-width-background .stories-section {
+    padding-left: 110px;
+  }
+  .stories-full-width-background .stories-section .stories-content {
+    padding-right: 30px;
+  }
+  .stories-full-width-background .stories-section .stories-content h2 {
+    font-size: 44px;
+  }
   .pricing-section {
     margin-inline: 110px 115px;
   }
@@ -923,6 +1019,13 @@ h6 {
     background-color: rgba(255, 194, 103, 0.4);
     z-index: -1;
   }
+  .stories-full-width-background .stories-section {
+    padding-left: 70px;
+  }
+  .stories-full-width-background .stories-section .stories-content h2 {
+    font-size: 40px;
+    max-width: 440px;
+  }
   .pricing-section {
     margin-inline: 80px 85px;
   }
@@ -1053,6 +1156,36 @@ h6 {
   }
   .check-investment-section .check-content .download-buttons .img-fluid {
     max-width: 150px;
+  }
+  .stories-full-width-background {
+    -webkit-clip-path: polygon(0 0, 100% 3%, 100% 97%, 0% 100%);
+            clip-path: polygon(0 0, 100% 3%, 100% 97%, 0% 100%);
+    margin-top: 126px;
+  }
+  .stories-full-width-background .bg-mobile-element {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  .stories-full-width-background .bg-mobile-element img {
+    width: 100%;
+    height: 2700px;
+  }
+  .stories-full-width-background .stories-section {
+    padding-top: 200px;
+    padding-left: 0;
+  }
+  .stories-full-width-background .stories-section .stories-content {
+    max-width: 443px;
+    width: 100%;
+    margin-inline: auto;
+    padding-right: 0;
+  }
+  .stories-full-width-background .stories-section .stories-content p {
+    margin-top: 15px;
+  }
+  .stories-full-width-background .stories-section .stories-card {
+    padding-left: 70px;
   }
   .pricing-section {
     margin-inline: auto;
@@ -1230,6 +1363,27 @@ h6 {
   }
   .check-investment-section .check-content .download-buttons .img-fluid:nth-child(2) {
     max-width: 162.4px;
+  }
+  .stories-full-width-background {
+    padding-bottom: 1401px;
+  }
+  .stories-full-width-background .stories-section .stories-content {
+    max-width: 400px;
+    width: 100%;
+    padding-inline: 24px;
+  }
+  .stories-full-width-background .stories-section .stories-content h2 {
+    font-size: 36px;
+  }
+  .stories-full-width-background .stories-section .stories-card {
+    padding-left: 25px;
+    margin-top: 37px;
+  }
+  .pricing-section {
+    margin-top: -1401px;
+  }
+  .pricing-section .pricing-head {
+    margin-top: 70px;
   }
   .pricing-section .pricing-head h2 {
     margin-inline: auto;
