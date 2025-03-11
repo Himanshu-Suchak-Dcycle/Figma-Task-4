@@ -1379,6 +1379,9 @@ h6 {
     padding-left: 25px;
     margin-top: 37px;
   }
+  .stories-full-width-background .stories-section .stories-card .card {
+    max-width: none;
+  }
   .pricing-section {
     margin-top: -1401px;
   }

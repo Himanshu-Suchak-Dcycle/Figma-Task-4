@@ -1445,6 +1445,9 @@ h6 {
       .stories-card {
         padding-left: 25px;
         margin-top: 37px;
+        .card {
+          max-width: none;
+        }
       }
     }
   }

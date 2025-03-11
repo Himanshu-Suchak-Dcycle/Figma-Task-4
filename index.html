@@ -350,49 +350,51 @@
         <div class="stories-card swiper mySwiper d-flex">
           <div class="swiper-wrapper d-flex">
             <div class="card swiper-slide">
-              <div class="img-placeholder">
-                <img
-                  src="/assets/images/card-image1.png"
-                  class="card-img-top img-fluid"
-                  alt="..."
-                />
-              </div>
-              <div class="card-body">
-                <div
-                  class="company-logo-container d-flex align-items-center justify-content-between"
-                >
+              <div class="card">
+                <div class="img-placeholder">
                   <img
-                    src="/assets/images/icons/stripe.svg"
-                    alt="Stripe icon"
-                    class="img-fluid"
+                    src="/assets/images/card-image1.png"
+                    class="card-img-top img-fluid"
+                    alt="..."
                   />
-                  <svg
-                    width="12"
-                    height="12"
-                    viewBox="0 0 12 12"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 6.01189H11.0631"
-                      stroke="#6772E5"
-                      stroke-width="1.43758"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M6.03154 1L11.0631 6.01277L6.03154 11.0255"
-                      stroke="#6772E5"
-                      stroke-width="1.43758"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
                 </div>
-                <p class="card-text">
-                  Developed to help freelance designers to save for their
-                  retirement during high.
-                </p>
+                <div class="card-body">
+                  <div
+                    class="company-logo-container d-flex align-items-center justify-content-between"
+                  >
+                    <img
+                      src="/assets/images/icons/stripe.svg"
+                      alt="Stripe icon"
+                      class="img-fluid"
+                    />
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 6.01189H11.0631"
+                        stroke="#6772E5"
+                        stroke-width="1.43758"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.03154 1L11.0631 6.01277L6.03154 11.0255"
+                        stroke="#6772E5"
+                        stroke-width="1.43758"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <p class="card-text">
+                    Developed to help freelance designers to save for their
+                    retirement during high.
+                  </p>
+                </div>
               </div>
             </div>
             <div class="card swiper-slide">
@@ -727,29 +729,29 @@
     </div>
 
     <!-- ! Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- ! Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 20,
         grabCursor: true,
+        
         breakpoints: {
           568: {
-            slidesPerView: 1.5, // 2 slides for screens >= 568px
+            slidesPerView: 1.5,
           },
           768: {
-            slidesPerView: 2, // 3 slides for screens >= 768px
+            slidesPerView: 2.25,
           },
           992: {
-            slidesPerView: 3, // 4 slides for screens >= 992px
-          },
-          
-          1400: {
-            slidesPerView: 4, // 4 slides for screens >= 992px
+            slidesPerView: 3,
           },
 
+          1400: {
+            slidesPerView: 4,
+          },
         },
       });
     </script>
@@ -759,7 +761,5 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <!-- ! Custom JS -->
-    <script src="/assets/js/script.js"></script>
   </body>
 </html>
